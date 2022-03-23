@@ -1,0 +1,253 @@
+%!Adobe-FontList 1.22
+%Locale:0x804
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EuclidCircularA-Bold
+FamilyName:Euclid Circular A
+StyleName:Bold
+FullName:EuclidCircularA-Bold
+MenuName:Euclid Circular A
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\学尚农硕-设计稿\xueshang_h5\Font\EuclidCircularA-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:137760
+FileModTime:1582012174
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,Euclid Circular A Bold
+NameArray:0,Mac,4,EuclidCircularA-Bold
+NameArray:0,Win,1,Euclid Circular A
+NameArray:0,Win,16,Euclid Circular A
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EuclidCircularA-BoldItalic
+FamilyName:Euclid Circular A
+StyleName:Bold Italic
+FullName:EuclidCircularA-BoldItalic
+MenuName:Euclid Circular A
+StyleBits:3
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\学尚农硕-设计稿\xueshang_h5\Font\EuclidCircularA-BoldItalic.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:143164
+FileModTime:1582012176
+WeightClass:700
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,18,Euclid Circular A Bold Italic
+NameArray:0,Mac,4,EuclidCircularA-BoldItalic
+NameArray:0,Win,1,Euclid Circular A
+NameArray:0,Win,16,Euclid Circular A
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EuclidCircularA-Italic
+FamilyName:Euclid Circular A
+StyleName:Italic
+FullName:EuclidCircularA-Italic
+MenuName:Euclid Circular A
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\学尚农硕-设计稿\xueshang_h5\Font\EuclidCircularA-Italic.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:146844
+FileModTime:1582012180
+WeightClass:400
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,18,Euclid Circular A Italic
+NameArray:0,Mac,4,EuclidCircularA-Italic
+NameArray:0,Win,1,Euclid Circular A
+NameArray:0,Win,16,Euclid Circular A
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EuclidCircularA-Light
+FamilyName:Euclid Circular A
+StyleName:Light
+FullName:EuclidCircularA-Light
+MenuName:Euclid Circular A Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\学尚农硕-设计稿\xueshang_h5\Font\EuclidCircularA-Light.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:134172
+FileModTime:1582012174
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,Euclid Circular A Light
+NameArray:0,Mac,4,EuclidCircularA-Light
+NameArray:0,Win,1,Euclid Circular A Light
+NameArray:0,Win,16,Euclid Circular A
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EuclidCircularA-LightItalic
+FamilyName:Euclid Circular A
+StyleName:Light Italic
+FullName:EuclidCircularA-LightItalic
+MenuName:Euclid Circular A Light
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\学尚农硕-设计稿\xueshang_h5\Font\EuclidCircularA-LightItalic.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:139828
+FileModTime:1582012176
+WeightClass:300
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,18,Euclid Circular A Light Italic
+NameArray:0,Mac,4,EuclidCircularA-LightItalic
+NameArray:0,Win,1,Euclid Circular A Light
+NameArray:0,Win,16,Euclid Circular A
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EuclidCircularA-Medium
+FamilyName:Euclid Circular A
+StyleName:Medium
+FullName:EuclidCircularA-Medium
+MenuName:Euclid Circular A Medium
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\学尚农硕-设计稿\xueshang_h5\Font\EuclidCircularA-Medium.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:141320
+FileModTime:1582012178
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,Euclid Circular A Medium
+NameArray:0,Mac,4,EuclidCircularA-Medium
+NameArray:0,Win,1,Euclid Circular A Medium
+NameArray:0,Win,16,Euclid Circular A
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EuclidCircularA-MediumItalic
+FamilyName:Euclid Circular A
+StyleName:Medium Italic
+FullName:EuclidCircularA-MediumItalic
+MenuName:Euclid Circular A Medium
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\学尚农硕-设计稿\xueshang_h5\Font\EuclidCircularA-MediumItalic.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:146756
+FileModTime:1582012182
+WeightClass:500
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,18,Euclid Circular A Medium Italic
+NameArray:0,Mac,4,EuclidCircularA-MediumItalic
+NameArray:0,Win,1,Euclid Circular A Medium
+NameArray:0,Win,16,Euclid Circular A
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EuclidCircularA-Regular
+FamilyName:Euclid Circular A
+StyleName:Regular
+FullName:EuclidCircularA-Regular
+MenuName:Euclid Circular A
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\学尚农硕-设计稿\xueshang_h5\Font\EuclidCircularA-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:141264
+FileModTime:1582012178
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,Euclid Circular A Regular
+NameArray:0,Mac,4,EuclidCircularA-Regular
+NameArray:0,Win,1,Euclid Circular A
+NameArray:0,Win,16,Euclid Circular A
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EuclidCircularA-SemiBold
+FamilyName:Euclid Circular A
+StyleName:SemiBold
+FullName:EuclidCircularA-SemiBold
+MenuName:Euclid Circular A SemiBold
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\学尚农硕-设计稿\xueshang_h5\Font\EuclidCircularA-SemiBold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:141256
+FileModTime:1582012178
+WeightClass:600
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,Euclid Circular A SemiBold
+NameArray:0,Mac,4,EuclidCircularA-SemiBold
+NameArray:0,Win,1,Euclid Circular A SemiBold
+NameArray:0,Win,16,Euclid Circular A
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EuclidCircularA-SemiBoldItalic
+FamilyName:Euclid Circular A
+StyleName:SemiBold Italic
+FullName:EuclidCircularA-SemiBoldItalic
+MenuName:Euclid Circular A SemiBold
+StyleBits:3
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\学尚农硕-设计稿\xueshang_h5\Font\EuclidCircularA-SemiBoldItalic.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:146432
+FileModTime:1582012180
+WeightClass:600
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,18,Euclid Circular A SemiBold Italic
+NameArray:0,Mac,4,EuclidCircularA-SemiBoldItalic
+NameArray:0,Win,1,Euclid Circular A SemiBold
+NameArray:0,Win,16,Euclid Circular A
+%EndFont
+
