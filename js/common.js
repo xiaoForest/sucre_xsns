@@ -79,23 +79,17 @@ jQuery(document).ready(function ($) {
 
     // })
     // https://swiperjs.com/swiper-api#autoplay
-    var Swiper1 = new Swiper('.swiper-homeBanner', {
-        effect: 'fade', // cards
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: '.swiperHomePagination',
-            type: 'bullets',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiperButtonNext',
-            prevEl: '.swiperButtonPrev',
-        },
-    })
+    const onSwiperver = (e) => {
+        e.el.onmouseover = () => { //鼠标放上暂停轮播
+            e.autoplay.stop();
+        }
+    }
+
+    const onSwiperave = (e) => {
+        e.el.onmouseleave = () => {
+            e.autoplay.start();
+        }
+    }
     var noticeWrapper = new Swiper(".noticeWrapper", {
         slidesPerView: 2,
         spaceBetween: 0,
@@ -112,12 +106,28 @@ jQuery(document).ready(function ($) {
             },
         }
     });
-    noticeWrapper.el.onmouseover = function () { //鼠标放上暂停轮播
-        noticeWrapper.autoplay.stop();
-    }
-    noticeWrapper.el.onmouseleave = function () {
-        noticeWrapper.autoplay.start();
-    }
+    onSwiperver(noticeWrapper)
+    onSwiperave(noticeWrapper)
+
+    var hotNewsSwiper = new Swiper('.hotNewsSwiper', {
+        effect: 'fade', // cards
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiperButtonNext',
+            prevEl: '.swiperButtonPrev',
+        },
+    })
+    onSwiperver(hotNewsSwiper)
+    onSwiperave(hotNewsSwiper)
 
     var num = 0
     if ($('#hotNews').length) {

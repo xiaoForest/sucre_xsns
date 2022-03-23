@@ -138,7 +138,7 @@ a {
 a:active,
 a:hover {
   text-decoration: none;
-  color: #073d96;
+  color: #228a3b;
   outline: 0;
 }
 .cor_blue {
@@ -7536,6 +7536,17 @@ button.swiper-pagination-bullet {
     transform: scale(0.96);
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
+  }
+}
+ 
+@keyframes scaleBg {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.12);
+    transform: scale(1.12);
   }
 }
 .flex-b {
