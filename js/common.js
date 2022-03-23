@@ -16,9 +16,67 @@ jQuery(document).ready(function ($) {
     }
 
     //导航
- 
+    function pcHeader() {
+        if ($(window).width() < 1199) {
+            $(".mMmenuLay dl").each(function (i) {
+                var _this = $(this);
+                if (_this.find("dd").size() > 0) {
+                    _this.find(".mToggle").show();
+                }
+            });
+            $(".mToggle").click(function (e) {
+                e.stopPropagation();
+                var _this2 = $(this);
+                if (_this2.parents("dl").hasClass("on")) {
+                    _this2.parents("dl").removeClass("on");
+                    _this2.removeClass("mToggle2");
+
+                    _this2.parents("dl").find(".mToggle_a").removeClass("mToggle2_a");
+                    _this2.parents("dl").find(".mMenu_dd3").slideUp(300);
+
+                } else {
+                    $(".mMmenuLay dl").removeClass("on");
+                    $(".mToggle").removeClass("mToggle2");
+                    _this2.addClass("mToggle2");
+                    _this2.parents("dl").addClass("on");
+
+                    $(".mToggle_a").removeClass("mToggle2_a");
+                    $(".mMenu_dd3").slideUp(300);
+
+                }
+            });
+
+            $(".mToggle_a").click(function (event) {
+                event.stopPropagation();
+                var _this3 = $(this);
+                _this3.toggleClass("mToggle2_a");
+                _this3.parents("dd").next(".mMenu_dd3").slideToggle(300);
+            });
+
+            $(".mOpenBtn").click(function (e) {
+                $(".mMenuLayBg,.mMmenuLay,.mCloseBtn").addClass("on");
+                $("body").css("overflow", "hidden");
+            });
+            $(".mCloseBtn,.mMenuLayBg").click(function () {
+                $(".mMenuLayBg,.mMmenuLay,.mCloseBtn").removeClass("on");
+                $("body").css("overflow", "inherit");
+            });
+            //搜素
+            $(".topSerBtn").click(function () {
+                $(".serBg,.serLayer").fadeIn(500);
+                $(".serClose").removeClass("on");
+            });
+            $(".serClose").click(function () {
+                $(".serBg,.serLayer").fadeOut(500);
+                $(".serClose").addClass("on");
+            });
+
+
+        }
+    }
+    pcHeader()
     // $(window).resize(function () {
- 
+
     // })
     // https://swiperjs.com/swiper-api#autoplay
     var Swiper1 = new Swiper('.swiper-homeBanner', {
@@ -84,7 +142,7 @@ jQuery(document).ready(function ($) {
             }
 
 
-            if ($(document).scrollTop() > ($('.footTop').offset().top - $(window).height()-250)) {
+            if ($(document).scrollTop() > ($('.footTop').offset().top - $(window).height() - 250)) {
                 $("#hotNews").css("opacity", 0);
             } else {
                 $("#hotNews").css("opacity", 1);

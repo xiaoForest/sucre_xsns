@@ -1,12 +1,5 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
-
 @charset "UTF-8";
-/* CSS reset by zaoanmiao,2022-03-12*/
+/* CSS reset by zaoanmiao,2022-03-23*/
 @font-face {
   font-family: "EuclidCircularA-Bold";
   src: url("../font/EuclidCircularA-Bold.ttf");
@@ -48,7 +41,6 @@
   font-family: "EuclidCircularA-SemiBoldItalic";
   src: url("../font/EuclidCircularA-SemiBoldItalic.ttf");
 }
-/* 主色就是#231815    有一些概述类型的浅灰色你就统一#808080  文字如果划过需要变色的就统一#073d96 */
 html {
   -webkit-text-size-adjust: 100%;
   height: 100%;
@@ -81,7 +73,6 @@ ul {
 }
 body {
   height: 100%;
-  color: #231815;
   font-size: 12px;
   font-family: Arial, "Microsoft YaHei", "宋体";
 }
@@ -6936,24 +6927,6 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
-/* PC端 */
-.headerWrap {
-  position: fixed;
-  width: 100%;
-  z-index: 16;
-  height: 64px;
-}
-.header {
-  height: 99px;
-  background: rgb(255, 255, 255);
-  border-bottom: 1px solid rgb(255, 255, 255);
-  padding: 0px 60px;
-  position: fixed;
-  left: 0px;
-  width: 100%;
-  box-shadow: 0 3px 5px rgb(0 0 0 / 5%);
-}
-
 /* 移动端 */
 .mHeader,
 .mMenuLayBg,
@@ -7028,7 +7001,7 @@ button.swiper-pagination-bullet {
     width: 30px;
     height: 2px;
     margin-bottom: 4px;
-    background: rgb(46, 100, 175);
+    background: rgb(34 138 59);
     display: block;
   }
   .mOpenBtn i:nth-child(2) {
@@ -7055,7 +7028,7 @@ button.swiper-pagination-bullet {
     -o-transition: all 0.5s ease-in-out 0.4s;
     transition: all 0.5s ease-in-out 0.4s;
     display: block;
-    background: rgb(46, 100, 175);
+    background: rgb(34 138 59);
   }
   .mMmenuLay {
     position: fixed;
@@ -7225,7 +7198,7 @@ button.swiper-pagination-bullet {
   .mHeader .topSerBtn .icon-svg {
     height: 30px;
     width: 30px;
-    fill: rgb(46, 100, 175);
+    fill: rgb(34 138 59);
   }
   .mLan_a {
     width: 30px;
@@ -7247,13 +7220,14 @@ button.swiper-pagination-bullet {
   }
 }
 .serBg {
-  background: rgb(46, 100, 175, 0.95);
+  background: rgb(34 138 59);
   position: fixed;
   left: 0px;
   top: 0px;
   width: 100%;
   height: 100%;
   z-index: 55;
+  opacity: .9;
 }
 .serLayer {
   position: fixed;
@@ -7564,10 +7538,6 @@ button.swiper-pagination-bullet {
     transform-origin: center bottom;
   }
 }
-.topEmptyBoxes {
-  height: 99px;
-}
-
 .flex-b {
   position: relative;
   height: 520px;
@@ -7607,7 +7577,86 @@ button.swiper-pagination-bullet {
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);
 }
-
+/* header */
+.header {
+  height: 160px;
+}
+.headerTopWrap {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logoMod {
+  display: flex;
+  align-items: center;
+}
+.logoMod .img {
+  margin-right: 30px;
+}
+.logoMod .img img {
+  width: auto;
+}
+.logoMod .txt {
+  position: relative;
+  padding-left: 30px;
+  font-size: 24px;
+  line-height: 1;
+}
+.logoMod .txt::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -8px;
+  content: "";
+  width: 1px;
+  height: 16px;
+  background: #ccc;
+}
+.searchMod {
+  padding: 0 20px;
+  width: 480px;
+  height: 40px;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchMod input {
+  width: 100%;
+  height: 100%;
+  background:none;
+  font-size: 14px;
+  color: #808080;
+}
+.searchMod .icon-svg {
+  width: 20px;
+  height: 20px;
+  fill: #228a3b;
+}
+.headerNavWrap {
+  background: #228a3b;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.headerNavWrap .item {
+  color: #fff;
+  height: 100%;
+  font-size: 20px;
+}
+.headerNavWrap .item + .item {
+  margin-left: 114px;
+}
+.headspace {
+  height: 56px;
+  display: none;
+}
+@media (max-width: 1199px) {
+  .headspace {
+    display: block;
+  }
+}
 /* footer */
 .footer {
   position: relative;
