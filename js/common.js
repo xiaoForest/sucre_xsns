@@ -96,6 +96,28 @@ jQuery(document).ready(function ($) {
             prevEl: '.swiperButtonPrev',
         },
     })
+    var noticeWrapper = new Swiper(".noticeWrapper", {
+        slidesPerView: 2,
+        spaceBetween: 0,
+        loop: true,
+        speed: 2000,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            993: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            },
+        }
+    });
+    noticeWrapper.el.onmouseover = function () { //鼠标放上暂停轮播
+        noticeWrapper.autoplay.stop();
+    }
+    noticeWrapper.el.onmouseleave = function () {
+        noticeWrapper.autoplay.start();
+    }
 
     var num = 0
     if ($('#hotNews').length) {
