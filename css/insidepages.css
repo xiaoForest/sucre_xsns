@@ -10,3 +10,117 @@
 }
 @media (max-width: 767px) {
 }
+
+.crumbsWrap {
+    height: 74px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.crumbsWrap .txt {
+    font-size: 14px;
+}
+.crumbsWrap .in {
+    font-size: 14px;
+}
+
+.crumbsWrap .icon-svg {
+    position: relative;
+    top: 1px;
+    width: 16px;
+    height: 16px;
+    fill: #333;
+    margin: 0 16px;
+}
+@media (max-width: 1799px) {
+}
+@media (max-width: 1379px) {
+}
+@media (max-width: 1299px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 993px) {
+}
+@media (max-width: 767px) {
+    .crumbsWrap {
+        margin: 0 10px;
+        height: 64px;
+    }
+ 
+}
+.pagingModule {
+    margin: 40px 0px 140px;
+    display: flex;
+    justify-content: center;
+}
+.paginglist {
+    display: flex;
+}
+.paginglist .item {
+    margin: 0px 5px;
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgb(217, 217, 217);
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease 0s;
+}
+.paginglist .item.on {
+    border-color: #228a3b;
+    color: rgb(255, 255, 255);
+    background: #228a3b;
+}
+.paginglist .item:hover {
+    border-color: #3f804e;
+    color: rgb(255, 255, 255);
+    background: #3f804e;
+}
+.paginglist .item.txt {
+    width: 58px;
+}
+.paginglist .item .icon-svg {
+    width: 16px;
+    height: 16px;
+    fill: #333;
+}
+.paginglist .item:hover .icon-svg {
+    fill: #fff;
+}
+.paginglist .item + .item .icon-svg {
+    transform: rotate(0deg);
+}
+.paginglist .item + .item ~ .item .icon-svg {
+    transform: rotate(180deg);
+}
+@media (max-width: 1799px) {
+}
+@media (max-width: 1379px) {
+}
+@media (max-width: 1299px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 993px) {
+}
+@media (max-width: 767px) {
+    .pagingModule {
+        margin: 20px 0px 40px;
+    }
+    .paginglist .item {
+        margin: 0px 3px;
+        width: 20px;
+        height: 20px;
+    }
+    .paginglist .item.txt {
+        width: 30px;
+    }
+    .paginglist .item .icon-svg {
+        width: 14px;
+        height: 14px;
+    }
+}
+
