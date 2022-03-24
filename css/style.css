@@ -472,23 +472,12 @@
   display: -webkit-box;
   -webkit-line-clamp: 2;
 }
-.homeListWrapper .items .info .time {
+.homeListWrapper .items .info .timeMod {
   margin-top: 20px;
   display: flex;
   align-items: center;
 }
 
-.homeListWrapper .items .info .time .icon-svg {
-  width: 18px;
-  height: 18px;
-  margin-right: 5px;
-  fill: #228a3b;
-}
-.homeListWrapper .items .info .time span {
-  color: #808080;
-  font-size: 14px;
-  line-height: 1;
-}
 
 @media (max-width: 1799px) {
   .homeListWrapper {
@@ -507,16 +496,8 @@
   .homeListWrapper .items .info p {
     font-size: 18px;
   }
-  .homeListWrapper .items .info .time {
+  .homeListWrapper .items .info .timeMod {
     margin-top: 15px;
-  }
-  .homeListWrapper .items .info .time .icon-svg {
-    width: 18px;
-    height: 18px;
-    margin-right: 5px;
-  }
-  .homeListWrapper .items .info .time span {
-    font-size: 14px;
   }
 }
 @media (max-width: 1379px) {
@@ -540,16 +521,8 @@
   .homeListWrapper .items .info p {
     font-size: 16px;
   }
-  .homeListWrapper .items .info .time {
+  .homeListWrapper .items .info .timeMod {
     margin-top: 10px;
-  }
-  .homeListWrapper .items .info .time .icon-svg {
-    width: 18px;
-    height: 18px;
-    margin-right: 5px;
-  }
-  .homeListWrapper .items .info .time span {
-    font-size: 14px;
   }
 }
 @media (max-width: 993px) {
@@ -569,16 +542,8 @@
   .homeListWrapper .items .info p {
     font-size: 16px;
   }
-  .homeListWrapper .items .info .time {
+  .homeListWrapper .items .info .timeMod {
     margin-top: 10px;
-  }
-  .homeListWrapper .items .info .time .icon-svg {
-    width: 18px;
-    height: 18px;
-    margin-right: 5px;
-  }
-  .homeListWrapper .items .info .time span {
-    font-size: 14px;
   }
 }
 @media (max-width: 767px) {
@@ -598,16 +563,8 @@
   .homeListWrapper .items .info p {
     font-size: 16px;
   }
-  .homeListWrapper .items .info .time {
+  .homeListWrapper .items .info .timeMod {
     margin-top: 10px;
-  }
-  .homeListWrapper .items .info .time .icon-svg {
-    width: 18px;
-    height: 18px;
-    margin-right: 5px;
-  }
-  .homeListWrapper .items .info .time span {
-    font-size: 14px;
   }
 }
 
@@ -783,29 +740,16 @@
 .homeListTxtWrapper .items:hover .info p {
   color: #fff;
 }
-.homeListTxtWrapper .items .info .time {
+.homeListTxtWrapper .items .info .timeMod{
   margin-top: 20px;
   display: flex;
   align-items: center;
 }
 
-.homeListTxtWrapper .items .info .time .icon-svg {
-  width: 16px;
-  height: 16px;
-  margin-right: 5px;
-  fill: #228a3b;
-  transition: 0.3s;
-}
-.homeListTxtWrapper .items:hover .info .time .icon-svg {
+.homeListTxtWrapper .items:hover .info .timeMod .icon-svg {
   fill: #fff;
 }
-.homeListTxtWrapper .items .info .time span {
-  color: #808080;
-  font-size: 14px;
-  line-height: 1;
-  transition: 0.3s;
-}
-.homeListTxtWrapper .items:hover .info .time span {
+.homeListTxtWrapper .items:hover .info .timeMod span {
   color: #fff;
 }
 
@@ -825,16 +769,8 @@
     font-size: 18px;
     line-height: 1.4;
   }
-  .homeListTxtWrapper .items .info .time {
+  .homeListTxtWrapper .items .info .timeMod{
     margin-top: 20px;
-  }
-  .homeListTxtWrapper .items .info .time .icon-svg {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-  }
-  .homeListTxtWrapper .items .info .time span {
-    font-size: 14px;
   }
 }
 @media (max-width: 1379px) {
@@ -857,16 +793,8 @@
     font-size: 18px;
     line-height: 1.4;
   }
-  .homeListTxtWrapper .items .info .time {
+  .homeListTxtWrapper .items .info .timeMod{
     margin-top: 20px;
-  }
-  .homeListTxtWrapper .items .info .time .icon-svg {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-  }
-  .homeListTxtWrapper .items .info .time span {
-    font-size: 14px;
   }
 }
 @media (max-width: 993px) {
@@ -885,16 +813,8 @@
     font-size: 16px;
     line-height: 1.4;
   }
-  .homeListTxtWrapper .items .info .time {
+  .homeListTxtWrapper .items .info .timeMod{
     margin-top: 20px;
-  }
-  .homeListTxtWrapper .items .info .time .icon-svg {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-  }
-  .homeListTxtWrapper .items .info .time span {
-    font-size: 14px;
   }
 }
 @media (max-width: 767px) {
@@ -913,16 +833,8 @@
     font-size: 16px;
     line-height: 1.4;
   }
-  .homeListTxtWrapper .items .info .time {
+  .homeListTxtWrapper .items .info .timeMod{
     margin-top: 20px;
-  }
-  .homeListTxtWrapper .items .info .time .icon-svg {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-  }
-  .homeListTxtWrapper .items .info .time span {
-    font-size: 14px;
   }
 }
 

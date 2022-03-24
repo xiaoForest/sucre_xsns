@@ -7955,3 +7955,49 @@ button.swiper-pagination-bullet {
     font-size: 14px;
   }
 }
+
+
+
+.timeMod {
+  display: flex;
+  align-items: center;
+}
+.timeMod .icon-svg {
+  width: 20px;
+  height: 20px;
+  fill: #228a3b;
+}
+.timeMod span {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #808080;
+}
+
+@media (max-width: 1799px) {
+}
+@media (max-width: 1379px) {
+}
+@media (max-width: 1299px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 993px) {
+  .timeMod .icon-svg {
+      width: 20px;
+      height: 20px;
+  }
+  .timeMod span {
+      margin-left: 8px;
+      font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .timeMod .icon-svg {
+      width: 20px;
+      height: 20px;
+  }
+  .timeMod span {
+      margin-left: 8px;
+      font-size: 14px;
+  }
+}

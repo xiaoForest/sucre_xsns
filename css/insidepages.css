@@ -169,16 +169,16 @@
     overflow: hidden;
     text-align: justify;
 }
-.newsListBox .item .info .time {
+.timeMod {
     display: flex;
     align-items: center;
 }
-.newsListBox .item .info .time .icon-svg {
+.timeMod .icon-svg {
     width: 20px;
     height: 20px;
     fill: #228a3b;
 }
-.newsListBox .item .info .time span {
+.timeMod span {
     margin-left: 8px;
     font-size: 14px;
     color: #808080;
@@ -216,11 +216,11 @@
         line-height: 1.6;
         margin: 7px 0;
     }
-    .newsListBox .item .info .time .icon-svg {
+    .timeMod .icon-svg {
         width: 20px;
         height: 20px;
     }
-    .newsListBox .item .info .time span {
+    .timeMod span {
         margin-left: 8px;
         font-size: 14px;
     }
@@ -248,12 +248,46 @@
         line-height: 1.6;
         margin: 7px 0;
     }
-    .newsListBox .item .info .time .icon-svg {
+    .timeMod .icon-svg {
         width: 20px;
         height: 20px;
     }
-    .newsListBox .item .info .time span {
+    .timeMod span {
         margin-left: 8px;
         font-size: 14px;
     }
+}
+
+.newsDetailsWrap {
+    display: flex;
+}
+.newsDetailsWrap .detailsLeft {
+    flex: 1;
+}
+.newsDetailsWrap .detailsRight {
+    width: 480px;
+    margin-left: 60px;
+}
+
+.newsDetailsBox {
+}
+.newsDetailsBox .tit {
+}
+.newsDetailsBox .time {
+    display: flex;
+}
+.newsDetailsBox .time .icon-svg {
+    width: 20px;
+    height: 20px;
+}
+.newsDetailsBox .time span {
+}
+
+.newsDetailsCon {
+}
+.newsDetailsCon p {
+}
+.newsDetailsCon img {
+}
+.newsDetailsCon span {
 }
