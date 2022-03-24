@@ -46,6 +46,7 @@
     .crumbsWrap {
         margin: 0 10px;
         height: 64px;
+        display: none;
     }
 }
 .pagingModule {
@@ -166,6 +167,7 @@
     color: #808080;
     margin: 20px 0;
     overflow: hidden;
+    text-align: justify;
 }
 .newsListBox .item .info .time {
     display: flex;
