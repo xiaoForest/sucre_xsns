@@ -129,6 +129,32 @@ jQuery(document).ready(function ($) {
     onSwiperver(hotNewsSwiper)
     onSwiperave(hotNewsSwiper)
 
+    var schoolListSwiper = new Swiper('.schoolListSwiper', {
+        slidesPerView: 6,
+        spaceBetween: 0,
+        loop: true,
+        speed: 2000,
+        autoplay: {
+            delay: 500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            1199: {
+                slidesPerView: 4,
+                spaceBetween: 0
+            },
+            993: {
+                slidesPerView: 3,
+                spaceBetween: 0
+            },
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 0
+            },
+        }
+    })
+    onSwiperver(schoolListSwiper)
+    onSwiperave(schoolListSwiper)
     var num = 0
     if ($('#hotNews').length) {
         $(window).resize(function () {

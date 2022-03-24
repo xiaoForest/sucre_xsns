@@ -1101,7 +1101,7 @@
   .universityListWrapper .item {
     width: 100%;
     height: 50px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
   }
   .universityListWrapper .item .link {
     padding: 0 15px;
@@ -1120,3 +1120,54 @@
   }
 }
 
+.schoolListWrapper {
+  margin-bottom: 90px;
+  border: 1px #e6e6e6 solid;
+  overflow: hidden;
+}
+.schoolListSwiper {
+  height: 118px;
+}
+.schoolListSwiper .swiper-wrapper {
+}
+.schoolListSwiper .swiper-wrapper .item {
+  height: 100%;
+  width: 16.66%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.schoolListSwiper .swiper-wrapper .item img {
+  width: auto;
+}
+
+@media (max-width: 1799px) {
+}
+@media (max-width: 1379px) {
+}
+@media (max-width: 1299px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 993px) {
+  .schoolListWrapper {
+    margin: 0 10px 60px;
+  }
+}
+@media (max-width: 767px) {
+  .schoolListWrapper {
+    margin: 0 10px 30px;
+  }
+  .schoolListSwiper {
+    height: 80px;
+  }
+  .schoolListSwiper .swiper-wrapper {
+  }
+  .schoolListSwiper .swiper-wrapper .item {
+    height: 100%;
+    width: 16.66%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
