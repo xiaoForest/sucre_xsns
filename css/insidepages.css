@@ -2001,6 +2001,7 @@
         margin: 0 10px 40px;
         overflow: auto;
         border-radius: 10px;
+        -webkit-overflow-scrolling: touch;
     }
     .schoolTableWrap .table {
         width: 1440px;
