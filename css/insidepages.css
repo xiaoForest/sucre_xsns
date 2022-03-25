@@ -1206,11 +1206,6 @@
     font-size: 16px;
     background: #228a3b;
     cursor: pointer;
-    transition: 0.3s;
-}
-.evaluationFormBox .formCon .btnMod .btn:hover,
-.evaluationFormBox .formCon .item > .hqcode:hover {
-    background: #005c15;
 }
 
 .schoolDynamicBox {
@@ -1736,5 +1731,215 @@
         margin-left: 15px;
         font-size: 16px;
         line-height: 1.4;
+    }
+}
+
+.schoolGateWrap {
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.schoolGateWrap .img {
+    width: 298px;
+    height: 298px;
+    border: 1px #e6e6e6 solid;
+}
+.schoolGateWrap .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.schoolGateWrap .info {
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.schoolGateWrap .info .tit {
+    font-size: 48px;
+    font-weight: normal;
+}
+.schoolGateWrap .info .line {
+    margin: 26px 0;
+    width: 10em;
+    height: 2px;
+    background: #228a3b;
+}
+.schoolGateWrap .info .text .txt {
+    display: flex;
+}
+.schoolGateWrap .info .text .txt .ti {
+    font-size: 16px;
+    line-height: 2;
+}
+.schoolGateWrap .info .text .txt .ps {
+    flex: 1;
+}
+.schoolGateWrap .info .text .txt .ps p {
+    font-size: 16px;
+    line-height: 2;
+    color: #808080;
+}
+.schoolGateWrap .applyFor {
+    display: flex;
+    align-items: center;
+}
+.schoolGateWrap .applyFor .btn {
+    width: 240px;
+    height: 80px;
+    font-size: 24px;
+    background: #228a3b;
+    color: #fff;
+    border-radius: 40px;
+    overflow: hidden;
+    cursor: pointer;
+}
+@media (max-width: 1799px) {
+    .schoolGateWrap {
+        padding: 40px;
+    }
+    .schoolGateWrap .img {
+        width: 298px;
+        height: 298px;
+    }
+    .schoolGateWrap .info .tit {
+        font-size: 40px;
+    }
+    .schoolGateWrap .info .line {
+        margin: 22px 0;
+        width: 10em;
+        height: 2px;
+    }
+    .schoolGateWrap .info .text .txt .ti {
+        font-size: 16px;
+        line-height: 2;
+    }
+    .schoolGateWrap .info .text .txt .ps p {
+        font-size: 16px;
+        line-height: 2;
+    }
+    .schoolGateWrap .applyFor .btn {
+        width: 240px;
+        height: 80px;
+        font-size: 24px;
+        border-radius: 40px;
+    }
+}
+@media (max-width: 1379px) {
+}
+@media (max-width: 1299px) {
+}
+@media (max-width: 1199px) {
+    .schoolGateWrap {
+        padding: 40px;
+    }
+    .schoolGateWrap .img {
+        width: 228px;
+        height: 228px;
+    }
+    .schoolGateWrap .info .tit {
+        font-size: 34px;
+    }
+    .schoolGateWrap .info .line {
+        margin: 18px 0;
+        width: 10em;
+        height: 2px;
+    }
+    .schoolGateWrap .info .text .txt .ti {
+        font-size: 16px;
+        line-height: 2;
+    }
+    .schoolGateWrap .info .text .txt .ps p {
+        font-size: 16px;
+        line-height: 2;
+    }
+    .schoolGateWrap .applyFor .btn {
+        width: 180px;
+        height: 60px;
+        font-size: 22px;
+        border-radius: 40px;
+    }
+}
+@media (max-width: 993px) {
+    .schoolGateWrap {
+        padding: 30px;
+        flex-wrap: wrap;
+    }
+    .schoolGateWrap .img {
+        width: 180px;
+        height: 180px;
+    }
+    .schoolGateWrap .info {
+        width: 70%;
+    }
+    .schoolGateWrap .info .tit {
+        font-size: 28px;
+    }
+    .schoolGateWrap .info .line {
+        margin: 18px 0;
+        width: 10em;
+        height: 2px;
+    }
+    .schoolGateWrap .info .text .txt .ti {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+    .schoolGateWrap .info .text .txt .ps p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+    .schoolGateWrap .applyFor {
+        width: 100%;
+    }
+    .schoolGateWrap .applyFor .btn {
+        width: 150px;
+        height: 50px;
+        margin: 20px auto 0;
+        font-size: 18px;
+        border-radius: 40px;
+    }
+}
+@media (max-width: 767px) {
+    .schoolGateWrap {
+        padding: 20px;
+        flex-wrap: wrap;
+        margin: 15px;
+    }
+    .schoolGateWrap .img {
+        width: 80px;
+        height: 80px;
+    }
+    .schoolGateWrap .info {
+        width: 100%;
+        padding: 0 0 0 20px;
+    }
+    .schoolGateWrap .info .tit {
+        font-size: 22px;
+    }
+    .schoolGateWrap .info .line {
+        margin: 10px 0;
+        width: 5em;
+        height: 2px;
+    }
+    .schoolGateWrap .info .text .txt .ti {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+    .schoolGateWrap .info .text .txt .ps p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+    .schoolGateWrap .applyFor {
+        width: 100%;
+    }
+    .schoolGateWrap .applyFor .btn {
+        width: 150px;
+        height: 44px;
+        margin: 15px auto 0;
+        font-size: 16px;
+        border-radius: 40px;
     }
 }
