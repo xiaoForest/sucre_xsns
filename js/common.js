@@ -90,71 +90,79 @@ jQuery(document).ready(function ($) {
             e.autoplay.start();
         }
     }
-    var noticeWrapper = new Swiper(".noticeWrapper", {
-        slidesPerView: 2,
-        spaceBetween: 0,
-        loop: true,
-        speed: 2000,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        breakpoints: {
-            993: {
-                slidesPerView: 1,
-                spaceBetween: 0
+    if ($('.noticeWrapper').length) {
+        var noticeWrapper = new Swiper(".noticeWrapper", {
+            slidesPerView: 2,
+            spaceBetween: 0,
+            loop: true,
+            speed: 2000,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
             },
-        }
-    });
-    onSwiperver(noticeWrapper)
-    onSwiperave(noticeWrapper)
+            breakpoints: {
+                993: {
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                },
+            }
+        });
+        onSwiperver(noticeWrapper)
+        onSwiperave(noticeWrapper)
+    }
 
-    var hotNewsSwiper = new Swiper('.hotNewsSwiper', {
-        effect: 'fade', // cards
-        loop: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiperButtonNext',
-            prevEl: '.swiperButtonPrev',
-        },
-    })
-    onSwiperver(hotNewsSwiper)
-    onSwiperave(hotNewsSwiper)
+    if ($('.hotNewsSwiper').length) {
+        var hotNewsSwiper = new Swiper('.hotNewsSwiper', {
+            effect: 'fade', // cards
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiperButtonNext',
+                prevEl: '.swiperButtonPrev',
+            },
+        })
+        onSwiperver(hotNewsSwiper)
+        onSwiperave(hotNewsSwiper)
 
-    var schoolListSwiper = new Swiper('.schoolListSwiper', {
-        slidesPerView: 6,
-        spaceBetween: 0,
-        loop: true,
-        speed: 2000,
-        autoplay: {
-            delay: 500,
-            disableOnInteraction: false,
-        },
-        breakpoints: {
-            1199: {
-                slidesPerView: 4,
-                spaceBetween: 0
+    }
+
+    if ($('.schoolListSwiper').length) {
+        var schoolListSwiper = new Swiper('.schoolListSwiper', {
+            slidesPerView: 6,
+            spaceBetween: 0,
+            loop: true,
+            speed: 2000,
+            autoplay: {
+                delay: 500,
+                disableOnInteraction: false,
             },
-            993: {
-                slidesPerView: 3,
-                spaceBetween: 0
-            },
-            767: {
-                slidesPerView: 2,
-                spaceBetween: 0
-            },
-        }
-    })
-    onSwiperver(schoolListSwiper)
-    onSwiperave(schoolListSwiper)
+            breakpoints: {
+                1199: {
+                    slidesPerView: 4,
+                    spaceBetween: 0
+                },
+                993: {
+                    slidesPerView: 3,
+                    spaceBetween: 0
+                },
+                767: {
+                    slidesPerView: 2,
+                    spaceBetween: 0
+                },
+            }
+        })
+        onSwiperver(schoolListSwiper)
+        onSwiperave(schoolListSwiper)
+    }
+
     var num = 0
     if ($('#hotNews').length) {
         $(window).resize(function () {
@@ -197,14 +205,15 @@ jQuery(document).ready(function ($) {
                     $('.product-none').hide();
                     $('.product-nav').removeClass('fex').removeAttr('style');
                 }
+
+                if ($(document).scrollTop() > ($('.footerWrap   ').offset().top - $(window).height() - 250)) {
+                    $("#hotNews").css("opacity", 0);
+                } else {
+                    $("#hotNews").css("opacity", 1);
+                }
             }
 
 
-            if ($(document).scrollTop() > ($('.footTop').offset().top - $(window).height() - 250)) {
-                $("#hotNews").css("opacity", 0);
-            } else {
-                $("#hotNews").css("opacity", 1);
-            }
         })
     }
 
