@@ -295,49 +295,49 @@
                     <div class="evaluationFormBox clearfix">
                         <div class="rightTit">院校评估</div>
                         <div class="formCon">
-                            <form action="">
-                                <div class="item">
-                                    <span class="txt">*姓名</span>
-                                    <input autocomplete="off" type="text" value="" name="name">
+
+                            <div class="item">
+                                <span class="txt">*姓名</span>
+                                <input autocomplete="off" type="text" value="" name="name">
+                            </div>
+                            <div class="item">
+                                <span class="txt">*手机</span>
+                                <input autocomplete="off" type="text" value="" name="phone">
+                            </div>
+                            <div class="item">
+                                <span class="txt">*校证码</span>
+                                <input type="text" autocomplete="off" value="" name="checkCode">
+                                <div class="vc"><img src="images/checkCode.jpg" alt=""></div>
+                            </div>
+                            <div class="item">
+                                <span class="txt">*验证码</span>
+                                <input autocomplete="off" type="text" value="" name="vcode">
+                                <button class="hqcode">获取验证码</button>
+                            </div>
+                            <div class="item">
+                                <span class="txt">邮箱</span>
+                                <input autocomplete="off" type="text" value="" name="email">
+                            </div>
+                            <div class="item">
+                                <div id="divselect" class="clientSelectMod">
+                                    <cite>*项目类型</cite>
+                                    <svg class="icon-svg">
+                                        <use xlink:href="#svgArrows"></use>
+                                    </svg>
+                                    <ul class="clientSelect">
+                                        <li><a href="javascript:;" selectid="1">按分类进行查找1</a></li>
+                                        <li><a href="javascript:;" selectid="2">按分类进行查找2</a></li>
+                                        <li><a href="javascript:;" selectid="3">按分类进行查找3</a></li>
+                                        <li><a href="javascript:;" selectid="4">按分类进行查找4</a></li>
+                                        <li><a href="javascript:;" selectid="5">按分类进行查找5</a></li>
+                                    </ul>
                                 </div>
-                                <div class="item">
-                                    <span class="txt">*手机</span>
-                                    <input autocomplete="off" type="text" value="" name="phone">
-                                </div>
-                                <div class="item">
-                                    <span class="txt">*校证码</span>
-                                    <input type="text" autocomplete="off" value="" name="slcode">
-                                    <div class="vc"><img src="" alt=""></div>
-                                </div>
-                                <div class="item">
-                                    <span class="txt">*验证码</span>
-                                    <input autocomplete="off" type="text" value="" name="vcode">
-                                    <button class="hqcode">获取验证码</button>
-                                </div>
-                                <div class="item">
-                                    <span class="txt">邮箱</span>
-                                    <input autocomplete="off" type="text" value="" name="email">
-                                </div>
-                                <div class="item">
-                                    <div id="divselect" class="clientSelectMod">
-                                        <cite>*项目类型</cite>
-                                        <svg class="icon-svg">
-                                            <use xlink:href="#svgArrows"></use>
-                                        </svg>
-                                        <ul class="clientSelect">
-                                            <li><a href="javascript:;" selectid="1">按分类进行查找1</a></li>
-                                            <li><a href="javascript:;" selectid="2">按分类进行查找2</a></li>
-                                            <li><a href="javascript:;" selectid="3">按分类进行查找3</a></li>
-                                            <li><a href="javascript:;" selectid="4">按分类进行查找4</a></li>
-                                            <li><a href="javascript:;" selectid="5">按分类进行查找5</a></li>
-                                        </ul>
-                                    </div>
-                                    <input name="" type="hidden" value="" id="inputselect" />
-                                </div>
-                                <div class="btnMod">
-                                    <button class="btn" type="submit" id="" onclick="formSubmit()">立即评估</button>
-                                </div>
-                            </form>
+                                <input name="project" type="hidden" value="" id="inputselect" />
+                            </div>
+                            <div class="btnMod">
+                                <button class="btn" type="submit" id="" onclick="formSubmit()">立即评估</button>
+                            </div>
+
                         </div>
                     </div>
                     <div class="schoolDynamicBox clearfix">
@@ -479,39 +479,37 @@
 
             var name = $('input[name="name"]').val(),
                 phone = $('input[name="phone"]').val(),
-                school = $('input[name="school"]').val(),
-                profession = $('input[name="profession"]').val(),
-                graduation = $('input[name="graduation"]').val(),
-                position = $('input[name="position"]').val(),
-                introduce = $('#introduce').val();
+                checkCode = $('input[name="checkCode"]').val(),
+                vcode = $('input[name="vcode"]').val(),
+                email = $('input[name="email"]').val(),
+                project = $('input[name="project"]').val();
 
             if (!isChinaName(name)) {
-                return console.log('请输入正确的名字')
+                return layer.msg('请输入正确的名字')
             } else if (!isChinaPhone(phone)) {
-                return console.log('请输入正确的手机号')
-            } else if (school == '') {
-                return console.log('请输入所在学校')
-            } else if (profession == '') {
-                return console.log('请输入专业')
-            } else if (graduation == '') {
-                return console.log('请输入毕业时间')
-            } else if (position == '') {
-                return console.log('请输入申请职位')
-            } else if (introduce == '') {
-                return console.log('请输入个人介绍')
+                return layer.msg('请输入正确的手机号')
+            } else if (checkCode == '') {
+                return layer.msg('请输入效验码')
+            } else if (vcode == '') {
+                return layer.msg('请输入验证码')
+            } else if (email == '') {
+                return layer.msg('请输入邮箱')
+            } else if (project == '') {
+                return layer.msg('请选择项目类型')
+            } else {
+
             }
 
-            // $.post('/spread/recruitment', {
+            // $.post('', {
             //     name: name,
             //     phone: phone,
-            //     school: school,
-            //     profession: profession,
-            //     graduation_date: graduation,
-            //     position: position,
-            //     introduce: introduce,
+            //     checkCode: checkCode,
+            //     vcode: vcode,
+            //     email: email,
+            //     project: project,
             // }, function (result) {
             //     if (result.code == 0) {
-            //         location.href = '/spread/recruitment-submit'
+            //         location.href = ''
             //     } else {
             //         console.log(result.msg);
             //     }
