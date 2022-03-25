@@ -3,9 +3,11 @@
         "Canculture",
         "divselectid",
         "inputselectid",
+        "slcode",
         "Swiper",
         "Swiperave",
         "Swiperver",
-        "titmod"
+        "titmod",
+        "vcode"
     ]
 }

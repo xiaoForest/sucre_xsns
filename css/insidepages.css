@@ -50,7 +50,7 @@
     }
 }
 .pagingModule {
-    margin: 40px 0px 140px;
+    margin: 40px 0px 60px;
     display: flex;
     justify-content: center;
 }
@@ -644,11 +644,12 @@
 
 .newsDetailsHotBox {
     border: 1px #e6e6e6 solid;
-    padding: 40px 0 20px;
+    padding: 0 0 20px;
 }
-.newsDetailsHotBox .tit {
+.rightTit {
     margin-left: -1px;
     margin-bottom: 10px;
+    margin-top: 40px;
     padding-left: 30px;
     font-size: 36px;
     line-height: 1;
@@ -686,9 +687,10 @@
 
 @media (max-width: 1799px) {
     .newsDetailsHotBox {
-        padding: 38px 0 18px;
+        padding: 0 0 18px;
     }
-    .newsDetailsHotBox .tit {
+    .rightTit {
+        margin-top: 38px;
         margin-bottom: 8px;
         padding-left: 28px;
         font-size: 34px;
@@ -708,9 +710,10 @@
 }
 @media (max-width: 1199px) {
     .newsDetailsHotBox {
-        padding: 36px 0 16px;
+        padding: 0 0 16px;
     }
-    .newsDetailsHotBox .tit {
+    .rightTit {
+        margin-top: 36px;
         margin-bottom: 6px;
         padding-left: 26px;
         font-size: 32px;
@@ -726,9 +729,10 @@
 }
 @media (max-width: 993px) {
     .newsDetailsHotBox {
-        padding: 34px 0 14px;
+        padding: 0 0 14px;
     }
-    .newsDetailsHotBox .tit {
+    .rightTit {
+        margin-top: 34px;
         margin-bottom: 4px;
         padding-left: 24px;
         font-size: 30px;
@@ -747,9 +751,10 @@
 }
 @media (max-width: 767px) {
     .newsDetailsHotBox {
-        padding: 24px 0 10px;
+        padding: 0 0 10px;
     }
-    .newsDetailsHotBox .tit {
+    .rightTit {
+        margin-top: 24px;
         margin-bottom: 4px;
         padding-left: 10px;
         font-size: 22px;
@@ -1065,4 +1070,322 @@
         height: 34px;
         font-size: 14px;
     }
+}
+
+.chooseSchoolWrap {
+    margin: 60px 0;
+    display: flex;
+}
+.chooseSchoolWrap .csLeft {
+    flex: 1;
+}
+.chooseSchoolWrap .csRight {
+    width: 480px;
+    margin-left: 60px;
+}
+
+.applyCollegeList {
+}
+.applyCollegeList .items {
+    padding: 30px;
+    margin-bottom: 30px;
+    display: block;
+    background: #fff;
+    display: flex;
+    transition: 0.3s;
+}
+.applyCollegeList .items:hover {
+    box-shadow: 0 10px 30px rgb(34 138 59 / 30%);
+}
+.applyCollegeList .items .img {
+    width: 329px;
+    height: 300px;
+    border-right: 1px #e6e6e6 solid;
+    overflow: hidden;
+}
+.applyCollegeList .items .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.applyCollegeList .items .info {
+    padding-top: 20px;
+    margin-left: 60px;
+}
+.applyCollegeList .items .info .tit {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: normal;
+    transition: 0.3s;
+}
+.applyCollegeList .items .info .line {
+    margin: 18px 0 34px;
+    display: block;
+    height: 2px;
+    width: 10em;
+    background: #228a3b;
+}
+.applyCollegeList .items .info .text {
+}
+.applyCollegeList .items .info .text p {
+    font-size: 16px;
+    color: #333;
+}
+.applyCollegeList .items .info .text p strong {
+    font-size: 16px;
+    line-height: 2;
+    color: #808080;
+    font-weight: normal;
+}
+
+.evaluationFormBox {
+    margin-bottom: 30px;
+    background: #fff;
+}
+.evaluationFormBox .formCon {
+    padding: 40px;
+}
+.evaluationFormBox .formCon form {
+}
+.evaluationFormBox .formCon .item {
+    margin-bottom: 10px;
+    height: 60px;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+}
+.evaluationFormBox .formCon .item > .txt {
+    position: relative;
+    top: 1px;
+    height: 100%;
+    width: 5em;
+    font-size: 16px;
+    line-height: 1;
+    padding-left: 20px;
+    color: #808080;
+    display: flex;
+    align-items: center;
+}
+
+.evaluationFormBox .formCon .item > input {
+    flex: 1;
+    background: none;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 1;
+    padding-left: 5px;
+    color: #808080;
+}
+.evaluationFormBox .formCon .item > .hqcode {
+    display: block;
+    width: 120px;
+    height: 60px;
+    font-size: 16px;
+    color: #fff;
+    background: #228a3b;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.evaluationFormBox .formCon .btnMod {
+    width: 100%;
+}
+.evaluationFormBox .formCon .btnMod .btn {
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    font-size: 16px;
+    background: #228a3b;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.evaluationFormBox .formCon .btnMod .btn:hover,
+.evaluationFormBox .formCon .item > .hqcode:hover {
+    background: #005c15;
+}
+
+.schoolDynamicBox {
+    background: #fff;
+}
+.schoolDynamicBox .sdlist {
+    margin: 10px 40px;
+}
+.schoolDynamicBox .sdlist .item {
+    padding: 20px 0;
+    border-top: 1px #e6e6e6 solid;
+    display: flex;
+    align-items: center;
+}
+.schoolDynamicBox .sdlist .item:first-child {
+    border: 0;
+}
+.schoolDynamicBox .sdlist .item .img {
+    width: 120px;
+    height: 68px;
+    overflow: hidden;
+}
+.schoolDynamicBox .sdlist .item .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.schoolDynamicBox .sdlist .item .txt {
+    flex: 1;
+    margin-left: 30px;
+    font-size: 16px;
+    line-height: 1.4;
+    transition: 0.3s;
+}
+
+.clientSelectMod {
+    position: relative;
+    width: 100%;
+    height: 56px;
+}
+.clientSelectMod cite {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-style: normal;
+    cursor: pointer;
+    color: #808080;
+}
+.clientSelectMod .clientSelect {
+    position: absolute;
+    margin-top: 6px;
+    background: #fff;
+    border: 0px;
+    font-size: 20px;
+    height: auto;
+    width: 100%;
+    text-indent: 14px;
+    border-radius: 4px;
+    z-index: 2;
+    display: none;
+    overflow: hidden;
+    box-shadow: 0px 7px 10px 7px rgb(0 0 0 / 5%);
+}
+.clientSelectMod .clientSelect li {
+    height: 3em;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+.clientSelectMod .clientSelect li:hover {
+    background: #228a3b;
+}
+.clientSelectMod .clientSelect li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+.clientSelectMod .clientSelect li:hover a {
+    color: #fff;
+}
+.clientSelectMod .icon-svg {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+    z-index: 1;
+    transform: rotate(-90deg);
+    fill: #808080;
+}
+@media (max-width: 1799px) {
+    .clientSelectMod cite,
+    .clientSelectMod .clientSelect li a {
+        font-size: 16px;
+    }
+    .clientSelectMod {
+        width: 450px;
+        height: 56px;
+    }
+    .clientSelectMod .clientSelect {
+        font-size: 16px;
+        text-indent: 30px;
+    }
+    .clientSelectMod .icon-svg {
+        right: 10px;
+        width: 24px;
+        height: 24px;
+        margin-top: -12px;
+    }
+}
+@media (max-width: 1379px) {
+    .clientSelectMod cite,
+    .clientSelectMod .clientSelect li a {
+        font-size: 14px;
+    }
+    .clientSelectMod {
+        width: 476px;
+        height: 56px;
+    }
+    .clientSelectMod .clientSelect {
+        font-size: 16px;
+        text-indent: 30px;
+    }
+    .clientSelectMod .icon-svg {
+        right: 10px;
+        width: 24px;
+        height: 24px;
+        margin-top: -12px;
+    }
+}
+@media (max-width: 1299px) {
+    .clientSelectMod {
+        width: 450px;
+        height: 56px;
+    }
+    .clientSelectMod .clientSelect {
+        font-size: 16px;
+        text-indent: 30px;
+    }
+    .clientSelectMod .icon-svg {
+        right: 10px;
+        width: 24px;
+        height: 24px;
+        margin-top: -12px;
+    }
+}
+@media (max-width: 1199px) {
+    .clientSelectMod {
+        width: 365px;
+        height: 46px;
+    }
+    .clientSelectMod .clientSelect {
+        font-size: 16px;
+        text-indent: 15px;
+    }
+    .clientSelectMod .icon-svg {
+        right: 10px;
+        width: 24px;
+        height: 24px;
+        margin-top: -12px;
+    }
+}
+@media (max-width: 993px) {
+    .clientSelectMod {
+        width: 100%;
+        height: 45px;
+    }
+    .clientSelectMod .clientSelect {
+        font-size: 16px;
+        text-indent: 18px;
+    }
+    .clientSelectMod .icon-svg {
+        right: 10px;
+        width: 24px;
+        height: 24px;
+        margin-top: -12px;
+    }
+}
+@media (max-width: 767px) {
 }
