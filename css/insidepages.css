@@ -1943,3 +1943,99 @@
         border-radius: 40px;
     }
 }
+
+.schoolTableWrap {
+    margin-bottom: 60px;
+    background: #fff;
+}
+.schoolTableWrap .table {
+    width: 100%;
+    text-align: left;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+.schoolTableWrap .table thead {
+    background: #228a3b;
+}
+.schoolTableWrap .table thead tr {
+}
+.schoolTableWrap .table tbody tr td,
+.schoolTableWrap .table thead tr th {
+    padding: 15px;
+}
+.schoolTableWrap .table thead tr th {
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+}
+.schoolTableWrap .table thead tr th + th {
+    border-left: 1px #1f7c35 solid;
+}
+.schoolTableWrap .table tbody {
+    background: #fff;
+}
+.schoolTableWrap .table tbody tr {
+}
+.schoolTableWrap .table tbody tr td {
+    font-size: 14px;
+    color: #808080;
+}
+.schoolTableWrap .table tbody tr td + td {
+    border-left: 1px #e5e5e5 solid;
+}
+.schoolTableWrap .table tbody tr + tr {
+    border-top: 1px #e5e5e5 solid;
+}
+@media (max-width: 1799px) {
+}
+@media (max-width: 1379px) {
+}
+@media (max-width: 1299px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 993px) {
+    /* 处理表单 */
+
+    .schoolTableWrap {
+        margin: 0 10px 40px;
+        overflow: auto;
+        border-radius: 10px;
+    }
+    .schoolTableWrap .table {
+        width: 1440px;
+    }
+    .schoolTableWrap .table tbody tr td,
+    .schoolTableWrap .table thead tr th {
+        padding: 10px 20px;
+    }
+    .schoolTableWrap .table thead tr th {
+        font-size: 16px;
+    }
+    .schoolTableWrap .table tbody tr td {
+        font-size: 14px;
+    }
+}
+@media (max-width: 767px) {
+}
+.schoolTableWrap::-webkit-scrollbar {
+    width: 5px;
+    height: 13px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.schoolTableWrap::-webkit-scrollbar-thumb {
+    background-color: #1f7c35;
+    background-clip: padding-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    min-height: 28px;
+}
+.schoolTableWrap::-webkit-scrollbar-thumb:hover {
+    background-color: #1f7c35;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
