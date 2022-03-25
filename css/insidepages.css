@@ -783,3 +783,166 @@
     transition: all 1s ease 0s;
     transform: translateY(100px);
 }
+
+.searchBannerWrap {
+    position: relative;
+    height: 600px;
+    background: url(../images/data_bank_bg.jpg) no-repeat top center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchBannerWrap .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    z-index: 1;
+}
+.searchDataBankBox {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.searchDataBankBox .tit {
+    margin-bottom: 30px;
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+}
+.searchDataBankBox .con {
+    margin-bottom: 20px;
+    width: 960px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.searchDataBankBox .con input {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    padding: 0 20px;
+}
+.searchDataBankBox .con .btn {
+    margin-right: 2px;
+    width: 120px;
+    height: 56px;
+    font-size: 16px;
+    background: #228a3b;
+    color: #fff;
+    cursor: pointer;
+}
+.hotSearchCon {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+.hotSearchCon .txt {
+    display: block;
+    color: #fff;
+    white-space: pre;
+}
+.hotSearchCon .hslist {
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hotSearchCon .hslist .item {
+    color: #fff;
+    display: block;
+    margin-right: 32px;
+}
+.hotSearchCon .txt,
+.hotSearchCon .hslist .item {
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1799px) {
+}
+@media (max-width: 1379px) {
+}
+@media (max-width: 1299px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 993px) {
+    .searchBannerWrap {
+        height: 50vh;
+    }
+    .searchDataBankBox .tit {
+        margin-bottom: 26px;
+        font-size: 44px;
+    }
+    .searchDataBankBox .con {
+        margin-bottom: 16px;
+        width: 80%;
+        height: 56px;
+    }
+    .searchDataBankBox .con input {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    .searchDataBankBox .con .btn {
+        margin-right: 3px;
+        width: 120px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .hotSearchCon .hslist {
+        margin-bottom: 100px;
+    }
+    .hotSearchCon .hslist .item {
+        margin-right: 15px;
+    }
+    .hotSearchCon .txt,
+    .hotSearchCon .hslist .item {
+        font-size: 12px;
+        line-height: 1;
+    }
+}
+@media (max-width: 767px) {
+    .searchBannerWrap {
+        height: 50vh;
+    }
+    .searchDataBankBox .tit {
+        margin-bottom: 20px;
+        font-size: 34px;
+    }
+    .searchDataBankBox .con {
+        margin-bottom: 16px;
+        width: 94%;
+        height: 44px;
+    }
+    .searchDataBankBox .con input {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    .searchDataBankBox .con .btn {
+        margin-right: 3px;
+        width: 100px;
+        height: 38px;
+        font-size: 14px;
+    }
+    .hotSearchCon .hslist {
+        margin-bottom: 100px;
+    }
+    .hotSearchCon .hslist .item {
+        margin-right: 15px;
+    }
+    .hotSearchCon .txt,
+    .hotSearchCon .hslist .item {
+        font-size: 12px;
+        line-height: 1;
+    }
+}
