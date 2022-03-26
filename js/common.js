@@ -322,4 +322,10 @@ jQuery(document).ready(function ($) {
         });
     };
     $.divselect("#divselect", "#inputselect");
+    $.divselect("#currentLocation", "#inputCc");
+    $.divselect("#intentionArea", "#inputIa");
+    $.divselect("#yearsWorking", "#inputYw");
+    $.divselect("#educationalBackground", "#inputEb");
+    $.divselect("#qualifications", "#inputQ");
+    $.divselect("#EnglishLevel", "#inputEl");
 })

@@ -1796,6 +1796,9 @@
     border-radius: 40px;
     overflow: hidden;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media (max-width: 1799px) {
     .schoolGateWrap {
@@ -2153,6 +2156,9 @@
     border-radius: 40px;
     font-size: 18px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .cdSwiper .swiper-pagination {
     top: -30px;
@@ -2568,4 +2574,165 @@
     }
 }
 @media (max-width: 767px) {
+}
+
+.schoolApplicationWrap {
+    margin-bottom: 120px;
+    padding: 50px;
+    background: #fff;
+}
+.schoolApplicationWrap .tit {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: normal;
+}
+.saFormBox {
+    padding: 0 60px;
+}
+.saFormBox .item {
+    margin-bottom: 10px;
+    border: 1px #e6e6e6 solid;
+    height: 38px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.saFormBox .item > span,
+.saFormBox .item cite {
+    font-size: 14px;
+    color: #808080;
+}
+.saFormBox .item cite {
+    padding-left: 0px;
+}
+.saFormBox .item > span {
+    width: 9em;
+    padding-left: 20px;
+}
+.saFormBox .item > input {
+    flex: 1;
+    font-size: 14px;
+    color: #808080;
+}
+.saFormBox .item > .icon-svg {
+    flex: 1;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    right: 10px;
+}
+.saFormBox .item .btnMod {
+    width: 100%;
+}
+.saFormBox .item .calendar {
+    padding-right: 36px;
+    width: 114px;
+    display: block;
+    flex: inherit;
+    display: flex;
+    cursor: pointer;
+}
+.saFormBox .btnMod .btn {
+    border-radius: 6px;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    color: #fff;
+    background: #228a3b;
+    cursor: pointer;
+}
+.saFormBox .clientSelectMod {
+    flex: 1;
+}
+.saFormBox .icon-svg {
+    transform: rotate(0deg);
+    width: 12px;
+    fill: #228a3b;
+}
+
+@media (max-width: 1799px) {
+}
+@media (max-width: 1379px) {
+}
+@media (max-width: 1299px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 993px) {
+    .schoolApplicationWrap {
+        margin-bottom: 80px;
+        padding: 40px;
+    }
+    .schoolApplicationWrap .tit {
+        margin-bottom: 30px;
+        font-size: 36px;
+    }
+    .saFormBox {
+        padding: 0;
+    }
+    .saFormBox .item {
+        margin-bottom: 10px;
+        height: 38px;
+        border-radius: 6px;
+    }
+    .saFormBox .item > span {
+        width: 8em;
+        padding-left: 15px;
+    }
+    .saFormBox .item > input {
+        font-size: 14px;
+    }
+    .saFormBox .item > .icon-svg {
+        width: 17px;
+        height: 17px;
+        right: 10px;
+    }
+    .saFormBox .item .calendar {
+        padding-right: 36px;
+        width: 114px;
+    }
+    .saFormBox .btnMod .btn {
+        height: 40px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 767px) {
+    .schoolApplicationWrap {
+        margin: 30px 20px 40px;
+        padding: 20px;
+    }
+    .schoolApplicationWrap .tit {
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    .saFormBox {
+        padding: 0;
+    }
+    .saFormBox .item {
+        margin-bottom: 10px;
+        height: 38px;
+        border-radius: 6px;
+    }
+    .saFormBox .item > span {
+        width: 7.5em;
+        padding-left: 15px;
+    }
+    .saFormBox .item > input {
+        font-size: 14px;
+    }
+    .saFormBox .item > .icon-svg {
+        width: 17px;
+        height: 17px;
+        right: 10px;
+    }
+    .saFormBox .item .calendar {
+        padding-right: 36px;
+        width: 114px;
+    }
+    .saFormBox .btnMod .btn {
+        height: 40px;
+        font-size: 18px;
+    }
 }
