@@ -301,6 +301,13 @@ jQuery(document).ready(function ($) {
         'cur': 'active'
     });
 
+    $('.backop').on('click', function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    })
 
     jQuery.divselect = function (divselectid, inputselectid) {
         var inputselect = $(inputselectid);

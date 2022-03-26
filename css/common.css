@@ -8001,7 +8001,6 @@ button.swiper-pagination-bullet {
 }
 
 .mian {
- 
 }
 .mian.dark {
   background: #f5f5f5;
@@ -8013,4 +8012,171 @@ button.swiper-pagination-bullet {
 .btn:hover,
 .hqcode:hover {
   background: #005c15 !important;
+}
+
+.floatingNavGlobal {
+  position: fixed;
+  right: 20px;
+  top: 60%;
+  z-index: 10;
+}
+.floatingNavGlobal .fnwrap {
+  position: relative;
+  width: 60px;
+  height: 120px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgb(34 138 59 / 10%);
+}
+.floatingNavGlobal .fnwrap .item {
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.floatingNavGlobal .fnwrap .icon-svg {
+  fill: #228a3b;
+}
+.floatingNavGlobal .fnwrap .icon-svg,
+.floatingNavGlobal .fnTop .icon-svg {
+  width: 22px;
+  height: 22px;
+}
+.floatingNavGlobal .fnwrap .line {
+  width: 16px;
+  height: 1px;
+  margin: 0 auto;
+  background: #cbcbcb;
+}
+.floatingNavGlobal .fnTop {
+  background: #228a3b;
+  margin-top: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgb(34 138 59 / 10%);
+}
+.floatingNavGlobal .fnTop .icon-svg {
+  fill: #fff;
+}
+
+.floatingNavGlobal .fnwrap .item .wechatMod {
+  position: absolute;
+  right: 80px;
+  bottom: -70px;
+  width: 200px;
+  height: 500px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgb(34 138 59 / 10%);
+  transition:.3s;
+  transform:scale(0);
+  opacity: 0;
+}
+.floatingNavGlobal .fnwrap .item:hover .wechatMod {
+  transform:scale(1);
+  opacity: 1;
+}
+.floatingNavGlobal .fnwrap .item .phoneMod:after,
+.floatingNavGlobal .fnwrap .item .wechatMod:after {
+  position: absolute;
+  right: -10px;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-left: 20px solid #fff;
+  border-bottom: 16px solid transparent;
+}
+.floatingNavGlobal .fnwrap .item .wechatMod:after {
+  bottom: 85px;
+}
+.floatingNavGlobal .fnwrap .item .wechatMod .box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.floatingNavGlobal .fnwrap .item .wechatMod .img {
+  width: 138px;
+  height: 139px;
+  border: 2px #e6e6e6 solid;
+}
+.floatingNavGlobal .fnwrap .item .wechatMod .img + .img {
+  margin-top: 10px;
+}
+.floatingNavGlobal .fnwrap .item .wechatMod .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.floatingNavGlobal .fnwrap .item .phoneMod {
+  position: absolute;
+  right: 80px;
+  bottom: -130px;
+  width: 200px;
+  height: 260px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgb(34 138 59 / 10%);
+  transition:.3s;
+  transform:scale(0);
+  opacity: 0;
+}
+.floatingNavGlobal .fnwrap .item:hover .phoneMod {
+  transform:scale(1);
+  opacity: 1;
+}
+.floatingNavGlobal .fnwrap .item .phoneMod:after {
+  top: 85px;
+}
+.floatingNavGlobal .fnwrap .item .phoneMod .box {
+  padding: 0 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.floatingNavGlobal .fnwrap .item .phoneMod .box .text {
+  padding: 16px 0;
+
+}
+.floatingNavGlobal .fnwrap .item .phoneMod .box .text+.text {
+  border-top: 1px #e6e6e6  solid;
+}
+.floatingNavGlobal .fnwrap .item .phoneMod .box .text span {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 6px;
+}
+.floatingNavGlobal .fnwrap .item .phoneMod .box .text a {
+  color: #228a3b;
+  font-size: 18px;
+  display: block;
+  font-family: 'EuclidCircularA-Regular';
+}
+
+@media (max-width: 1799px) {
+}
+@media (max-width: 1379px) {
+}
+@media (max-width: 1299px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 993px) {
+}
+@media (max-width: 767px) {
+  .floatingNavGlobal {
+    /* display: none; */
+  }
 }
