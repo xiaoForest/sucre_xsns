@@ -8050,16 +8050,21 @@ button.swiper-pagination-bullet {
   background: #cbcbcb;
 }
 .floatingNavGlobal .fnTop {
+  display: none;
   background: #228a3b;
   margin-top: 10px;
+  border-radius: 6px;
   width: 60px;
   height: 60px;
-  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgb(34 138 59 / 10%);
+}
+.floatingNavGlobal .fnTop .icon {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 10px 30px rgb(34 138 59 / 10%);
 }
 .floatingNavGlobal .fnTop .icon-svg {
   fill: #fff;
@@ -8074,12 +8079,12 @@ button.swiper-pagination-bullet {
   background: #fff;
   border-radius: 6px;
   box-shadow: 0 10px 30px rgb(34 138 59 / 10%);
-  transition:.3s;
-  transform:scale(0);
+  transition: 0.3s;
+  transform: scale(0);
   opacity: 0;
 }
 .floatingNavGlobal .fnwrap .item:hover .wechatMod {
-  transform:scale(1);
+  transform: scale(1);
   opacity: 1;
 }
 .floatingNavGlobal .fnwrap .item .phoneMod:after,
@@ -8127,12 +8132,12 @@ button.swiper-pagination-bullet {
   background: #fff;
   border-radius: 6px;
   box-shadow: 0 10px 30px rgb(34 138 59 / 10%);
-  transition:.3s;
-  transform:scale(0);
+  transition: 0.3s;
+  transform: scale(0);
   opacity: 0;
 }
 .floatingNavGlobal .fnwrap .item:hover .phoneMod {
-  transform:scale(1);
+  transform: scale(1);
   opacity: 1;
 }
 .floatingNavGlobal .fnwrap .item .phoneMod:after {
@@ -8148,10 +8153,9 @@ button.swiper-pagination-bullet {
 }
 .floatingNavGlobal .fnwrap .item .phoneMod .box .text {
   padding: 16px 0;
-
 }
-.floatingNavGlobal .fnwrap .item .phoneMod .box .text+.text {
-  border-top: 1px #e6e6e6  solid;
+.floatingNavGlobal .fnwrap .item .phoneMod .box .text + .text {
+  border-top: 1px #e6e6e6 solid;
 }
 .floatingNavGlobal .fnwrap .item .phoneMod .box .text span {
   font-size: 18px;
@@ -8162,7 +8166,7 @@ button.swiper-pagination-bullet {
   color: #228a3b;
   font-size: 18px;
   display: block;
-  font-family: 'EuclidCircularA-Regular';
+  font-family: "EuclidCircularA-Regular";
 }
 
 @media (max-width: 1799px) {

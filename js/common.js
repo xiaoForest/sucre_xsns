@@ -225,15 +225,30 @@ jQuery(document).ready(function ($) {
                     $('.product-nav').removeClass('fex').removeAttr('style');
                 }
 
-                if ($(document).scrollTop() > ($('.footerWrap   ').offset().top - $(window).height() - 250)) {
+                if ($(document).scrollTop() > ($('.footerWrap').offset().top - $(window).height() - 250)) {
                     $("#hotNews").css("opacity", 0);
                 } else {
                     $("#hotNews").css("opacity", 1);
                 }
             }
 
-
         })
+    }
+
+    var preTop = 0;
+    var currTop = 0;
+    if ($('.floatingNavGlobal').length) {
+        var mlNav = $('.fnTop'); // navDIV
+        $(window).scroll(function () {
+            currTop = $(window).scrollTop();
+            if ($(window).scrollTop() < 400) {
+                mlNav.fadeOut(200);
+
+            } else if ($(window).scrollTop() > 400) {
+                mlNav.fadeIn(500);
+            }
+            preTop = $(window).scrollTop();
+        });
     }
 
     function switchTab(option) {
