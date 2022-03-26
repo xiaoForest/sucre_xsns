@@ -7604,6 +7604,7 @@ button.swiper-pagination-bullet {
 }
 .logoMod .img {
   margin-right: 30px;
+  width: 170px;
 }
 .logoMod .img img {
   width: auto;
@@ -8018,7 +8019,8 @@ button.swiper-pagination-bullet {
 .floatingNavGlobal {
   position: fixed;
   right: 20px;
-  top: 60%;
+  top: 50%;
+  margin-top: -60px;
   z-index: 10;
 }
 .floatingNavGlobal .fnwrap {

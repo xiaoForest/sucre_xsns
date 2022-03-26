@@ -189,6 +189,7 @@
     margin-left: 8px;
     font-size: 14px;
     color: #808080;
+    font-family: "EuclidCircularA-Regular";
 }
 
 @media (max-width: 1799px) {
@@ -2599,7 +2600,6 @@
 }
 .saFormBox .item {
     margin-bottom: 10px;
-    border: 1px #e6e6e6 solid;
     height: 38px;
     border-radius: 6px;
     display: flex;
@@ -2614,14 +2614,19 @@
 .saFormBox .item cite {
     padding-left: 0px;
 }
-.saFormBox .item > span {
+.saFormBox .item > span,
+.saFormBox .btnMod span {
     width: 9em;
-    padding-left: 20px;
+    text-align: right;
+    padding-right: 1em;
 }
 .saFormBox .item > input {
     flex: 1;
+    padding: 0 10px;
     font-size: 14px;
     color: #808080;
+    border: 1px #e6e6e6 solid;
+    height: 100%;
 }
 .saFormBox .item > .icon-svg {
     flex: 1;
@@ -2640,7 +2645,12 @@
     cursor: pointer;
     width: 100%;
 }
+.saFormBox .btnMod {
+    display: flex;
+}
 .saFormBox .btnMod .btn {
+    flex: 1;
+    margin-left: 1em;
     border-radius: 6px;
     width: 100%;
     height: 40px;
@@ -2651,6 +2661,9 @@
 }
 .saFormBox .clientSelectMod {
     flex: 1;
+    border: 1px #e6e6e6 solid;
+    height: 38px;
+    padding: 0 10px;
 }
 .saFormBox .icon-svg {
     transform: rotate(0deg);
@@ -2684,7 +2697,7 @@
         border-radius: 6px;
     }
     .saFormBox .item > span {
-        width: 8em;
+        width: 9em;
         padding-left: 15px;
     }
     .saFormBox .item > input {
@@ -2705,8 +2718,8 @@
 }
 @media (max-width: 767px) {
     .schoolApplicationWrap {
-        margin: 30px 20px 40px;
-        padding: 20px;
+        margin: 30px 15px 40px;
+        padding: 15px;
     }
     .schoolApplicationWrap .tit {
         margin-bottom: 20px;
@@ -2721,8 +2734,11 @@
         border-radius: 6px;
     }
     .saFormBox .item > span {
-        width: 7.5em;
-        padding-left: 15px;
+        width: 8em;
+        padding-right: .5em;
+        white-space: pre;
+        font-size: 12px;
+        padding-left: 0;
     }
     .saFormBox .item > input {
         font-size: 14px;
@@ -2735,9 +2751,14 @@
     .saFormBox .item .calendar {
         padding-right: 36px;
     }
+    .saFormBox .btnMod {}
+    .saFormBox .btnMod span {
+    width: 8em;
+}
     .saFormBox .btnMod .btn {
         height: 40px;
         font-size: 18px;
+        margin: 0;
     }
 }
 
@@ -3249,7 +3270,7 @@
 }
 
 .subjectListWrap {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .subjectListWrap .item {
     margin-bottom: 30px;
@@ -3278,6 +3299,7 @@
     background: #228a3b;
     border-color: #228a3b;
     color: #fff;
+    box-shadow: 0 10px 30px rgb(34 138 59 / 50%);
 }
 .subjectListWrap .item:hover .txt,
 .subjectListWrap .item:hover .timeMod span {
@@ -3346,7 +3368,6 @@
 }
 
 .dynamicListWrap {
-    overflow: hidden;
 }
 .dynamicListWrap .item {
     padding: 29px 0;

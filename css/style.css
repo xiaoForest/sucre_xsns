@@ -23,6 +23,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  transition-timing-function: linear !important;
 }
 .noticeWrapper .notice .items {
   width: 100%;
@@ -459,6 +460,12 @@
   height: 192px;
   overflow: hidden;
 }
+.homeListWrapper .items .img img {
+  transition: 0.3s;
+}
+.homeListWrapper .items:hover .img img {
+  transform: scale(1.12);
+}
 .homeListWrapper .items .info {
   padding: 25px 30px;
 }
@@ -477,7 +484,6 @@
   display: flex;
   align-items: center;
 }
-
 
 @media (max-width: 1799px) {
   .homeListWrapper {
@@ -740,7 +746,7 @@
 .homeListTxtWrapper .items:hover .info p {
   color: #fff;
 }
-.homeListTxtWrapper .items .info .timeMod{
+.homeListTxtWrapper .items .info .timeMod {
   margin-top: 20px;
   display: flex;
   align-items: center;
@@ -769,7 +775,7 @@
     font-size: 18px;
     line-height: 1.4;
   }
-  .homeListTxtWrapper .items .info .timeMod{
+  .homeListTxtWrapper .items .info .timeMod {
     margin-top: 20px;
   }
 }
@@ -793,7 +799,7 @@
     font-size: 18px;
     line-height: 1.4;
   }
-  .homeListTxtWrapper .items .info .timeMod{
+  .homeListTxtWrapper .items .info .timeMod {
     margin-top: 20px;
   }
 }
@@ -813,7 +819,7 @@
     font-size: 16px;
     line-height: 1.4;
   }
-  .homeListTxtWrapper .items .info .timeMod{
+  .homeListTxtWrapper .items .info .timeMod {
     margin-top: 20px;
   }
 }
@@ -833,7 +839,7 @@
     font-size: 16px;
     line-height: 1.4;
   }
-  .homeListTxtWrapper .items .info .timeMod{
+  .homeListTxtWrapper .items .info .timeMod {
     margin-top: 20px;
   }
 }
@@ -1041,6 +1047,7 @@
   height: 118px;
 }
 .schoolListSwiper .swiper-wrapper {
+  transition-timing-function: linear !important;
 }
 .schoolListSwiper .swiper-wrapper .item {
   height: 100%;

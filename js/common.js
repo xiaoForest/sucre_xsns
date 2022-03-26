@@ -95,9 +95,9 @@ jQuery(document).ready(function ($) {
             slidesPerView: 2,
             spaceBetween: 0,
             loop: true,
-            speed: 2000,
+            speed: 4000,
             autoplay: {
-                delay: 3000,
+                delay: 0,
                 disableOnInteraction: false,
             },
             breakpoints: {
@@ -141,7 +141,7 @@ jQuery(document).ready(function ($) {
             loop: true,
             speed: 2000,
             autoplay: {
-                delay: 500,
+                delay: 0,
                 disableOnInteraction: false,
             },
             breakpoints: {
