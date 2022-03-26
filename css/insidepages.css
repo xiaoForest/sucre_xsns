@@ -1945,7 +1945,6 @@
 }
 
 .schoolTableWrap {
-    margin-bottom: 60px;
     background: #fff;
 }
 .schoolTableWrap .table {
@@ -1998,7 +1997,7 @@
     /* 处理表单 */
 
     .schoolTableWrap {
-        margin: 0 10px 40px;
+        margin: 0 10px;
         overflow: auto;
         border-radius: 10px;
         -webkit-overflow-scrolling: touch;
@@ -2039,4 +2038,534 @@
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+}
+
+.collegeDetailsWrap {
+    margin-top: 60px;
+    padding: 0 0 120px;
+    display: flex;
+}
+.collegeDetailsWrap .cdLeft {
+    background: #fff;
+    flex: 1;
+}
+.collegeDetailsWrap .cdRight {
+    width: 480px;
+    margin-left: 60px;
+}
+
+.collegeDetailsWrap .cdTabsBox {
+}
+.collegeDetailsWrap .cdTabsBox .cdNav {
+    border-bottom: 1px #e6e6e6 solid;
+    display: flex;
+    padding-left: 20px;
+}
+.collegeDetailsWrap .cdTabsBox .cdNav .item {
+    position: relative;
+    height: 84px;
+    font-size: 24px;
+    margin: 0 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.collegeDetailsWrap .cdTabsBox .cdNav .item.active {
+    color: #228a3b;
+}
+.collegeDetailsWrap .cdTabsBox .cdNav .item:after {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: -1px;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background: #228a3b;
+    opacity: 0;
+    transition: 0.3s;
+    transform: translateY(0);
+}
+.collegeDetailsWrap .cdTabsBox .cdNav .item.active:after {
+    opacity: 1;
+    width: 100%;
+}
+.collegeDetailsWrap .cdTabsBox .cdCon {
+    background: #fff;
+    padding: 40px;
+}
+.collegeDetailsWrap .cdTabsBox .cdCon .boxes {
+    transition: 0.3s;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+.collegeDetailsWrap .cdTabsBox .cdCon .boxes.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.collegeDetailsWrap .cdTabsBox .cdCon .boxes p {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.cdSwiperBox {
+    background: #fff;
+}
+.cdSwiper {
+    position: relative;
+    width: 100%;
+    padding: 30px 40px 40px;
+}
+.cdSwiper .swiper-wrapper {
+    overflow: hidden;
+}
+.cdSwiper .items {
+    /* overflow: hidden; */
+}
+
+.cdSwiper .items .img {
+    width: 100%;
+}
+.cdSwiper .items .img img {
+    width: 100%;
+}
+.cdSwiper .items .info {
+    position: relative;
+    z-index: 106;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cdSwiper .items .info .tit {
+    font-size: 24px;
+    color: #333;
+    font-weight: normal;
+}
+.cdSwiper .items .info .btn {
+    width: 180px;
+    height: 60px;
+    color: #fff;
+    background: #228a3b;
+    border-radius: 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.cdSwiper .swiper-pagination {
+    top: -30px;
+    right: 40px;
+    height: 40px;
+    left: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.cdSwiper .swiper-pagination .swiper-pagination-bullet-active {
+    background: #228a3b;
+}
+.cdSwiper .swiper-pagination .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+}
+
+@media (max-width: 1799px) {
+    .collegeDetailsWrap {
+        margin-top: 50px;
+        padding: 0 0 100px;
+        display: flex;
+    }
+    .collegeDetailsWrap .cdLeft {
+        background: #fff;
+        flex: 1;
+    }
+    .collegeDetailsWrap .cdRight {
+        width: 450px;
+        margin-left: 50px;
+    }
+
+    .collegeDetailsWrap .cdTabsBox {
+    }
+    .collegeDetailsWrap .cdTabsBox .cdNav {
+        border-bottom: 1px #e6e6e6 solid;
+        display: flex;
+        padding-left: 20px;
+    }
+    .collegeDetailsWrap .cdTabsBox .cdNav .item {
+        position: relative;
+        height: 74px;
+        font-size: 22px;
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .collegeDetailsWrap .cdTabsBox .cdNav .item.active {
+        color: #228a3b;
+    }
+    .collegeDetailsWrap .cdTabsBox .cdNav .item:after {
+        position: absolute;
+        display: block;
+        content: "";
+        bottom: -1px;
+        left: 0;
+        height: 4px;
+        width: 0;
+        background: #228a3b;
+        opacity: 0;
+        transition: 0.3s;
+        transform: translateY(0);
+    }
+    .collegeDetailsWrap .cdTabsBox .cdNav .item.active:after {
+        opacity: 1;
+        width: 100%;
+    }
+    .collegeDetailsWrap .cdTabsBox .cdCon {
+        background: #fff;
+        padding: 40px;
+    }
+    .collegeDetailsWrap .cdTabsBox .cdCon .boxes {
+        transition: 0.3s;
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    .collegeDetailsWrap .cdTabsBox .cdCon .boxes.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .collegeDetailsWrap .cdTabsBox .cdCon .boxes p {
+        font-size: 16px;
+        line-height: 2;
+        margin-bottom: 20px;
+    }
+
+    .cdSwiperBox {
+        background: #fff;
+    }
+    .cdSwiper {
+        position: relative;
+        width: 100%;
+        padding: 25px 35px 35px;
+    }
+    .cdSwiper .swiper-wrapper {
+        overflow: hidden;
+    }
+    .cdSwiper .items {
+        /* overflow: hidden; */
+    }
+
+    .cdSwiper .items .img {
+        width: 100%;
+    }
+    .cdSwiper .items .img img {
+        width: 100%;
+    }
+    .cdSwiper .items .info {
+        position: relative;
+        z-index: 106;
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cdSwiper .items .info .tit {
+        font-size: 22px;
+        color: #333;
+        font-weight: normal;
+    }
+    .cdSwiper .items .info .btn {
+        width: 165px;
+        height: 55px;
+        color: #fff;
+        background: #228a3b;
+        border-radius: 40px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .cdSwiper .swiper-pagination {
+        top: -24px;
+        right: 40px;
+        height: 40px;
+        left: auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .cdSwiper .swiper-pagination .swiper-pagination-bullet-active {
+        background: #228a3b;
+    }
+    .cdSwiper .swiper-pagination .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+    }
+}
+@media (max-width: 1379px) {
+}
+@media (max-width: 1299px) {
+}
+@media (max-width: 1199px) {
+    .collegeDetailsWrap {
+        margin-top: 40px;
+        padding: 0 0 100px;
+        display: flex;
+    }
+    .collegeDetailsWrap .cdLeft {
+        background: #fff;
+        flex: 1;
+    }
+    .collegeDetailsWrap .cdRight {
+        width: 370px;
+        margin-left: 40px;
+    }
+
+    .collegeDetailsWrap .cdTabsBox {
+    }
+    .collegeDetailsWrap .cdTabsBox .cdNav {
+        border-bottom: 1px #e6e6e6 solid;
+        display: flex;
+        padding-left: 20px;
+    }
+    .collegeDetailsWrap .cdTabsBox .cdNav .item {
+        position: relative;
+        height: 64px;
+        font-size: 22px;
+        margin: 0 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .collegeDetailsWrap .cdTabsBox .cdNav .item.active {
+        color: #228a3b;
+    }
+    .collegeDetailsWrap .cdTabsBox .cdNav .item:after {
+        position: absolute;
+        display: block;
+        content: "";
+        bottom: -1px;
+        left: 0;
+        height: 4px;
+        width: 0;
+        background: #228a3b;
+        opacity: 0;
+        transition: 0.3s;
+        transform: translateY(0);
+    }
+    .collegeDetailsWrap .cdTabsBox .cdNav .item.active:after {
+        opacity: 1;
+        width: 100%;
+    }
+    .collegeDetailsWrap .cdTabsBox .cdCon {
+        background: #fff;
+        padding: 30px;
+    }
+    .collegeDetailsWrap .cdTabsBox .cdCon .boxes {
+        transition: 0.3s;
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    .collegeDetailsWrap .cdTabsBox .cdCon .boxes.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .collegeDetailsWrap .cdTabsBox .cdCon .boxes p {
+        font-size: 16px;
+        line-height: 2;
+        margin-bottom: 15px;
+    }
+
+    .cdSwiperBox {
+        background: #fff;
+    }
+    .cdSwiper {
+        position: relative;
+        width: 100%;
+        padding: 20px 30px 30px;
+    }
+    .cdSwiper .swiper-wrapper {
+        overflow: hidden;
+    }
+    .cdSwiper .items {
+        /* overflow: hidden; */
+    }
+
+    .cdSwiper .items .img {
+        width: 100%;
+    }
+    .cdSwiper .items .img img {
+        width: 100%;
+    }
+    .cdSwiper .items .info {
+        position: relative;
+        z-index: 106;
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cdSwiper .items .info .tit {
+        font-size: 18px;
+        color: #333;
+        font-weight: normal;
+    }
+    .cdSwiper .items .info .btn {
+        width: 119px;
+        height: 40px;
+        color: #fff;
+        background: #228a3b;
+        border-radius: 40px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .cdSwiper .swiper-pagination {
+        top: -22px;
+        right: 40px;
+        height: 40px;
+        left: auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .cdSwiper .swiper-pagination .swiper-pagination-bullet-active {
+        background: #228a3b;
+    }
+    .cdSwiper .swiper-pagination .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+    }
+}
+@media (max-width: 993px) {
+    .collegeDetailsWrap {
+        padding: 0 0 40px;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 15px;
+    }
+    .collegeDetailsWrap .cdLeft {
+        background: #fff;
+        flex: 1;
+    }
+    .collegeDetailsWrap .cdRight {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .collegeDetailsWrap .cdTabsBox {
+    }
+    .collegeDetailsWrap .cdTabsBox .cdNav {
+        border-bottom: 1px #e6e6e6 solid;
+        display: flex;
+        justify-content: space-around;
+        padding-left: 0;
+    }
+    .collegeDetailsWrap .cdTabsBox .cdNav .item {
+        position: relative;
+        height: 50px;
+        font-size: 18px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .collegeDetailsWrap .cdTabsBox .cdNav .item.active {
+        color: #228a3b;
+    }
+    .collegeDetailsWrap .cdTabsBox .cdNav .item:after {
+        position: absolute;
+        display: block;
+        content: "";
+        bottom: -1px;
+        left: 0;
+        height: 2px;
+        width: 0;
+        background: #228a3b;
+        opacity: 0;
+        transition: 0.3s;
+        transform: translateY(0);
+    }
+    .collegeDetailsWrap .cdTabsBox .cdNav .item.active:after {
+        opacity: 1;
+        width: 100%;
+    }
+    .collegeDetailsWrap .cdTabsBox .cdCon {
+        background: #fff;
+        padding: 20px;
+    }
+    .collegeDetailsWrap .cdTabsBox .cdCon .boxes {
+        transition: 0.3s;
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    .collegeDetailsWrap .cdTabsBox .cdCon .boxes.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .collegeDetailsWrap .cdTabsBox .cdCon .boxes p {
+        font-size: 14px;
+        line-height: 2;
+        margin-bottom: 10px;
+    }
+
+    .cdSwiperBox {
+        background: #fff;
+    }
+    .cdSwiper {
+        position: relative;
+        width: 100%;
+        padding: 15px 15px 25px;
+    }
+    .cdSwiper .swiper-wrapper {
+        overflow: hidden;
+    }
+    .cdSwiper .items {
+        /* overflow: hidden; */
+    }
+
+    .cdSwiper .items .img {
+        width: 100%;
+    }
+    .cdSwiper .items .img img {
+        width: 100%;
+    }
+    .cdSwiper .items .info {
+        position: relative;
+        z-index: 106;
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cdSwiper .items .info .tit {
+        font-size: 16px;
+        /* color: #333; */
+        font-weight: normal;
+    }
+    .cdSwiper .items .info .btn {
+        width: 93px;
+        height: 30px;
+        color: #fff;
+        background: #228a3b;
+        border-radius: 50px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .cdSwiper .swiper-pagination {
+        top: -18px;
+        right: 15px;
+        height: 31px;
+        left: auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .cdSwiper .swiper-pagination .swiper-pagination-bullet-active {
+        background: #228a3b;
+    }
+    .cdSwiper .swiper-pagination .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+    }
+}
+@media (max-width: 767px) {
 }

@@ -8008,6 +8008,7 @@ button.swiper-pagination-bullet {
 }
 .btn {
   transition: 0.3s;
+  display: block;
 }
 .btn:hover,
 .hqcode:hover {
