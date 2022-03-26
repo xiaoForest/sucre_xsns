@@ -17,6 +17,9 @@
     align-items: center;
     overflow: hidden;
 }
+.crumbsWrap ~ .cityListWrap {
+    margin: 0 0 40px;
+}
 .crumbsWrap .txt {
     font-size: 14px;
 }
@@ -47,6 +50,9 @@
         margin: 0 10px;
         height: 64px;
         display: none;
+    }
+    .crumbsWrap ~ .cityListWrap {
+        margin: 20px 0;
     }
 }
 .pagingModule {
@@ -2731,5 +2737,195 @@
     .saFormBox .btnMod .btn {
         height: 40px;
         font-size: 18px;
+    }
+}
+
+.enrollmentGuideWrap {
+    margin: 0 -12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.enrollmentGuideWrap .items {
+    margin: 0 12px 40px;
+    transition: 0.3s;
+}
+.enrollmentGuideWrap .items .img {
+    height: 261px;
+    overflow: hidden;
+}
+.enrollmentGuideWrap .items,
+.enrollmentGuideWrap .items .img {
+    width: 464px;
+}
+.enrollmentGuideWrap .items .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.enrollmentGuideWrap .items:hover .img img {
+    transform: scale(1.12);
+}
+.enrollmentGuideWrap .info {
+    border: 1px #e6e6e6 solid;
+    border-top: 0;
+    padding: 34px 40px 0;
+}
+.enrollmentGuideWrap .info .tit {
+    font-size: 24px;
+    height: 64px;
+    margin-bottom: 12px;
+    font-weight: normal;
+    overflow: hidden;
+}
+.enrollmentGuideWrap .info .txt {
+    margin-bottom: 20px;
+    height: 76px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #808080;
+    overflow: hidden;
+}
+.enrollmentGuideWrap .info .timeMod {
+    border-top: 1px #e6e6e6 solid;
+    height: 56px;
+}
+
+.enrollmentGuideWrap .items:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgb(34 138 59 / 30%);
+}
+
+@media (max-width: 1799px) {
+    .enrollmentGuideWrap {
+        margin: 0 -12px;
+    }
+    .enrollmentGuideWrap .items {
+        margin: 0 12px 40px;
+    }
+    .enrollmentGuideWrap .items .img {
+        height: 215px;
+    }
+    .enrollmentGuideWrap .items,
+    .enrollmentGuideWrap .items .img {
+        width: 374px;
+    }
+    .enrollmentGuideWrap .info {
+        padding: 25px 30px 0;
+    }
+    .enrollmentGuideWrap .info .tit {
+        font-size: 22px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    .enrollmentGuideWrap .info .txt {
+        margin-bottom: 20px;
+        height: 76px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+    .enrollmentGuideWrap .info .timeMod {
+        height: 56px;
+    }
+}
+@media (max-width: 1379px) {
+
+}
+@media (max-width: 1299px) {
+}
+@media (max-width: 1199px) {
+    .enrollmentGuideWrap {
+        margin: 0 -12px;
+    }
+    .enrollmentGuideWrap .items {
+        margin: 0 12px 40px;
+    }
+    .enrollmentGuideWrap .items .img {
+        height: 175px;
+    }
+    .enrollmentGuideWrap .items,
+    .enrollmentGuideWrap .items .img {
+        width: 307px;
+    }
+    .enrollmentGuideWrap .info {
+        padding: 20px 25px 0;
+    }
+    .enrollmentGuideWrap .info .tit {
+        font-size: 22px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    .enrollmentGuideWrap .info .txt {
+        margin-bottom: 20px;
+        height: 76px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+    .enrollmentGuideWrap .info .timeMod {
+        height: 56px;
+    }
+}
+@media (max-width: 993px) {
+    .enrollmentGuideWrap {
+        margin: 0 -8px;
+    }
+    .enrollmentGuideWrap .items {
+        margin: 0 8px 30px;
+    }
+    .enrollmentGuideWrap .items .img {
+        height: 150px;
+    }
+    .enrollmentGuideWrap .items,
+    .enrollmentGuideWrap .items .img {
+        width: 239px;
+    }
+    .enrollmentGuideWrap .info {
+        padding: 15px 20px 0;
+    }
+    .enrollmentGuideWrap .info .tit {
+        font-size: 18px;
+        height: 48px;
+        margin-bottom: 10px;
+    }
+    .enrollmentGuideWrap .info .txt {
+        margin-bottom: 20px;
+        height: 76px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+    .enrollmentGuideWrap .info .timeMod {
+        height: 46px;
+    }
+}
+@media (max-width: 767px) {
+    .enrollmentGuideWrap {
+        margin: 0 15px;
+    }
+    .enrollmentGuideWrap .items {
+        margin: 0 0 15px;
+    }
+    .enrollmentGuideWrap .items .img {
+        height: auto;
+    }
+    .enrollmentGuideWrap .items,
+    .enrollmentGuideWrap .items .img {
+        width: 100%;
+    }
+    .enrollmentGuideWrap .info {
+        padding: 15px 20px 0;
+    }
+    .enrollmentGuideWrap .info .tit {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .enrollmentGuideWrap .info .txt {
+        margin-bottom: 10px;
+        height: 76px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+    .enrollmentGuideWrap .info .timeMod {
+        height: 46px;
     }
 }
