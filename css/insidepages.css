@@ -2628,11 +2628,10 @@
 }
 .saFormBox .item .calendar {
     padding-right: 36px;
-    width: 114px;
     display: block;
-    flex: inherit;
     display: flex;
     cursor: pointer;
+    width: 100%;
 }
 .saFormBox .btnMod .btn {
     border-radius: 6px;
@@ -2691,7 +2690,6 @@
     }
     .saFormBox .item .calendar {
         padding-right: 36px;
-        width: 114px;
     }
     .saFormBox .btnMod .btn {
         height: 40px;
@@ -2729,7 +2727,6 @@
     }
     .saFormBox .item .calendar {
         padding-right: 36px;
-        width: 114px;
     }
     .saFormBox .btnMod .btn {
         height: 40px;
