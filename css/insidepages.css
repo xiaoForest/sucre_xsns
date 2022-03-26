@@ -3317,7 +3317,6 @@
     }
 }
 @media (max-width: 993px) {
-
 }
 @media (max-width: 767px) {
     .subjectListWrap {
@@ -3343,5 +3342,109 @@
     }
     .subjectListWrap .item .timeMod {
         margin: 15px 0 0;
+    }
+}
+
+.dynamicListWrap {
+    overflow: hidden;
+}
+.dynamicListWrap .item {
+    padding: 29px 0;
+    margin-bottom: 30px;
+    border: 1px #e6e6e6 solid;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.dynamicListWrap .item:hover {
+    border-color: #228a3b;
+    box-shadow: 0 10px 30px rgb(34 138 59 / 30%);
+}
+.dynamicListWrap .item .date {
+    width: 137px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dynamicListWrap .item .date .day {
+    line-height: 1;
+    font-size: 48px;
+    color: #228a3b;
+    font-family: "EuclidCircularA-Regular";
+}
+.dynamicListWrap .item .date .yearsMonth {
+    line-height: 1;
+    font-size: 14px;
+    color: #228a3b;
+    font-family: "EuclidCircularA-Regular";
+}
+.dynamicListWrap .item .info {
+    border-left: 1px #e6e6e6 solid;
+    flex: 1;
+    padding: 0 38px;
+}
+.dynamicListWrap .item .info .tit {
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: normal;
+}
+.dynamicListWrap .item .info .txt {
+    font-size: 16px;
+    line-height: 2;
+    color: #808080;
+}
+@media (max-width: 1799px) {
+}
+@media (max-width: 1379px) {
+}
+@media (max-width: 1299px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 993px) {
+}
+@media (max-width: 767px) {
+    .dynamicListWrap {
+        margin: 20px;
+    }
+    .dynamicListWrap .item {
+        display: block;
+        padding: 18px 0;
+        margin-bottom: 30px;
+        flex-direction: column;
+    }
+    .dynamicListWrap .item .date {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .dynamicListWrap .item .date .day {
+        line-height: 1;
+        font-size: 48px;
+        color: #228a3b;
+        font-family: "EuclidCircularA-Regular";
+    }
+    .dynamicListWrap .item .date .yearsMonth {
+        line-height: 1;
+        font-size: 14px;
+        color: #228a3b;
+        font-family: "EuclidCircularA-Regular";
+    }
+    .dynamicListWrap .item .info {
+        padding: 20px 0 0;
+        border-top: 1px #e6e6e6 solid;
+        flex: 1;
+        margin: 0 20px;
+        border-left: 0;
+    }
+    .dynamicListWrap .item .info .tit {
+        font-size: 22px;
+        margin-bottom: 16px;
+        font-weight: normal;
+    }
+    .dynamicListWrap .item .info .txt {
+        font-size: 14px;
+        line-height: 2;
+        color: #808080;
     }
 }
