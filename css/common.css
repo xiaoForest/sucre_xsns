@@ -8012,6 +8012,7 @@ button.swiper-pagination-bullet {
 .btn:hover,
 .hqcode:hover {
   background: #005c15 !important;
+  color: #fff !important;
 }
 
 .floatingNavGlobal {
