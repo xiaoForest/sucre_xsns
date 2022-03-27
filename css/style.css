@@ -12,6 +12,7 @@
 }
 
 .noticeWrapper {
+  position: relative;
   margin: 24px 0;
   border: 1px #e6e6e6 solid;
   height: 78px;
@@ -21,13 +22,15 @@
 }
 .noticeWrapper .notice {
   width: 100%;
-  display: flex;
   align-items: center;
   transition-timing-function: linear !important;
+  position: relative;
+  display: flex;
 }
 .noticeWrapper .notice .items {
-  width: 100%;
+  width: 50%;
   padding: 0 30px;
+  float: left;
   display: flex;
   align-items: center;
 }
@@ -76,6 +79,7 @@
   }
   .noticeWrapper .notice .items {
     padding: 0 15px;
+    width: 100%;
   }
   .noticeWrapper .notice .items .icon-svg {
     margin-right: 10px;
@@ -1044,14 +1048,20 @@
   overflow: hidden;
 }
 .schoolListSwiper {
+  width: 100%;
+  position: relative;
   height: 118px;
+  display: flex;
 }
-.schoolListSwiper .swiper-wrapper {
+.schoolListSwiper .schoolList {
+  position: relative;
   transition-timing-function: linear !important;
+  display: flex;
 }
-.schoolListSwiper .swiper-wrapper .item {
+.schoolListSwiper .item {
   height: 100%;
-  width: 16.66%;
+  width: 230px;
+  float: left;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1061,16 +1071,31 @@
 }
 
 @media (max-width: 1799px) {
+  .schoolListSwiper .item {
+    width: 230px;
+  }
 }
 @media (max-width: 1379px) {
+  .schoolListSwiper .item {
+    width: 230px;
+  }
 }
 @media (max-width: 1299px) {
+  .schoolListSwiper .item {
+    width: 230px;
+  }
 }
 @media (max-width: 1199px) {
+  .schoolListSwiper .item {
+    width: 230px;
+  }
 }
 @media (max-width: 993px) {
   .schoolListWrapper {
     margin: 0 10px 60px;
+  }
+  .schoolListSwiper .item {
+    width: 230px;
   }
 }
 @media (max-width: 767px) {
@@ -1078,15 +1103,12 @@
     margin: 0 10px 30px;
   }
   .schoolListSwiper {
-    height: 80px;
+    height: 62px;
   }
   .schoolListSwiper .swiper-wrapper {
   }
-  .schoolListSwiper .swiper-wrapper .item {
-    height: 100%;
-    width: 16.66%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .schoolListSwiper .item {
+    width: 170px;
+    padding: 0 20px;
   }
 }

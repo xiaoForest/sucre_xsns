@@ -76,6 +76,7 @@ jQuery(document).ready(function ($) {
     }
     pcHeader()
     // $(window).resize(function () {
+    // JavaScript Document
 
     // })
     // https://swiperjs.com/swiper-api#autoplay
@@ -90,27 +91,8 @@ jQuery(document).ready(function ($) {
             e.autoplay.start();
         }
     }
-    if ($('.noticeWrapper').length) {
-        var noticeWrapper = new Swiper(".noticeWrapper", {
-            slidesPerView: 2,
-            spaceBetween: 0,
-            loop: true,
-            speed: 4000,
-            autoplay: {
-                delay: 0,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                993: {
-                    slidesPerView: 1,
-                    spaceBetween: 0
-                },
-            }
-        });
-        onSwiperver(noticeWrapper)
-        onSwiperave(noticeWrapper)
-    }
 
+ 
     if ($('.hotNewsSwiper').length) {
         var hotNewsSwiper = new Swiper('.hotNewsSwiper', {
             effect: 'fade', // cards
@@ -134,34 +116,34 @@ jQuery(document).ready(function ($) {
 
     }
 
-    if ($('.schoolListSwiper').length) {
-        var schoolListSwiper = new Swiper('.schoolListSwiper', {
-            slidesPerView: 6,
-            spaceBetween: 0,
-            loop: true,
-            speed: 2000,
-            autoplay: {
-                delay: 0,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                1199: {
-                    slidesPerView: 4,
-                    spaceBetween: 0
-                },
-                993: {
-                    slidesPerView: 3,
-                    spaceBetween: 0
-                },
-                767: {
-                    slidesPerView: 2,
-                    spaceBetween: 0
-                },
-            }
-        })
-        onSwiperver(schoolListSwiper)
-        onSwiperave(schoolListSwiper)
-    }
+    // if ($('.schoolListSwiper').length) {
+    //     var schoolListSwiper = new Swiper('.schoolListSwiper', {
+    //         slidesPerView: 6,
+    //         spaceBetween: 0,
+    //         loop: true,
+    //         speed: 2000,
+    //         autoplay: {
+    //             delay: 0,
+    //             disableOnInteraction: false,
+    //         },
+    //         breakpoints: {
+    //             1199: {
+    //                 slidesPerView: 4,
+    //                 spaceBetween: 0
+    //             },
+    //             993: {
+    //                 slidesPerView: 3,
+    //                 spaceBetween: 0
+    //             },
+    //             767: {
+    //                 slidesPerView: 2,
+    //                 spaceBetween: 0
+    //             },
+    //         }
+    //     })
+    //     onSwiperver(schoolListSwiper)
+    //     onSwiperave(schoolListSwiper)
+    // }
 
     if ($('.cdSwiper').length) {
         var cdSwiper = new Swiper('.cdSwiper', {

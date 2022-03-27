@@ -7070,7 +7070,7 @@ button.swiper-pagination-bullet {
     float: left;
   }
   .mLogo img {
-    height: 37px;
+    height: 28px;
     width: auto;
   }
   .mLogo span {
@@ -7604,7 +7604,7 @@ button.swiper-pagination-bullet {
 }
 .logoMod .img {
   margin-right: 30px;
-  width: 170px;
+  width: auto;
 }
 .logoMod .img img {
   width: auto;
