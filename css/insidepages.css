@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @media (max-width: 1799px) {
 }
 @media (max-width: 1379px) {
@@ -13,7 +20,11 @@
 
 .crumbsWrap {
     height: 74px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     overflow: hidden;
 }
@@ -34,6 +45,8 @@
     height: 16px;
     fill: #333;
     margin: 0 16px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 @media (max-width: 1799px) {
@@ -58,10 +71,16 @@
 }
 .pagingModule {
     margin: 40px 0px 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 .paginglist {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .paginglist .item {
@@ -71,9 +90,17 @@
     border: 1px solid rgb(217, 217, 217);
     font-size: 12px;
     color: rgb(102, 102, 102);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
 }
 .paginglist .item.on {
@@ -98,9 +125,13 @@
     fill: #fff;
 }
 .paginglist .item + .item .icon-svg {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
 }
 .paginglist .item + .item ~ .item .icon-svg {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 @media (max-width: 1799px) {
@@ -138,7 +169,11 @@
 .newsListBox .item {
     padding: 40px 0;
     border-bottom: 1px #e6e6e6 solid;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .newsListBox .item:hover {
@@ -150,16 +185,29 @@
     overflow: hidden;
 }
 .newsListBox .item .img img {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 .newsListBox .item:hover .img img {
+    -webkit-transform: scale(1.12);
+    -ms-transform: scale(1.12);
     transform: scale(1.12);
 }
 .newsListBox .item .info {
     margin-left: 40px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 .newsListBox .item .info .tit {
@@ -177,7 +225,11 @@
     text-align: justify;
 }
 .timeMod {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .timeMod .icon-svg {
@@ -236,6 +288,9 @@
 @media (max-width: 767px) {
     .newsListBox .item {
         padding: 25px 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .newsListBox .item .img {
@@ -265,12 +320,16 @@
         font-size: 14px;
     }
 }
-/* 详情 s */
+/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ s */
 .newsDetailsWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 100px 0;
 }
 .newsDetailsWrap .detailsLeft {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
 }
 .newsDetailsWrap .detailsRight {
@@ -376,6 +435,9 @@
 @media (max-width: 993px) {
     .newsDetailsWrap {
         padding: 40px 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .newsDetailsWrap .detailsRight {
@@ -441,7 +503,11 @@
     margin-top: 100px;
 }
 .detailsGuideMod .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 .detailsGuideMod .info .btn {
@@ -450,8 +516,14 @@
     font-size: 18px;
     color: rgb(128, 128, 128);
     border: 1px solid rgb(230, 230, 230);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .detailsGuideMod .info .returns {
@@ -459,9 +531,18 @@
     top: -70px;
     padding: 0px 30px;
     background: rgb(255, 255, 255);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     cursor: pointer;
 }
@@ -469,8 +550,14 @@
     margin-bottom: 6px;
     width: 58px;
     height: 58px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     border-radius: 50%;
     border: 1px solid rgb(231, 231, 231);
@@ -785,7 +872,11 @@
 
 .detailsRight .product-nav {
     position: relative;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
     transform: translateY(0);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .detailsRight .product-nav.fex {
@@ -793,7 +884,11 @@
     top: 0;
     right: 0;
     z-index: 10;
+    -webkit-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
     transition: all 1s ease 0s;
+    -webkit-transform: translateY(100px);
+    -ms-transform: translateY(100px);
     transform: translateY(100px);
 }
 
@@ -802,8 +897,14 @@
     height: 600px;
     background: url(../images/data_bank_bg.jpg) no-repeat top center;
     background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 .searchBannerWrap .mask {
@@ -820,8 +921,15 @@
     width: 100%;
     position: relative;
     z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .searchDataBankBox .tit {
@@ -835,7 +943,11 @@
     width: 960px;
     height: 60px;
     background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .searchDataBankBox .con input {
@@ -854,8 +966,12 @@
     cursor: pointer;
 }
 .hotSearchCon {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 90%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 .hotSearchCon .txt {
@@ -865,8 +981,13 @@
 }
 .hotSearchCon .hslist {
     margin-bottom: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 .hotSearchCon .hslist .item {
@@ -965,7 +1086,10 @@
 }
 .cityListBox {
     margin: 0 -5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 .cityListBox .item {
@@ -977,10 +1101,18 @@
     border: 1px #ccc solid;
     border-radius: 3px;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .cityListBox .item.on {
@@ -1069,7 +1201,11 @@
     }
     .cityListBox {
         margin: 0 10px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
     .cityListBox .item {
@@ -1082,9 +1218,13 @@
 
 .chooseSchoolWrap {
     margin: 60px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .chooseSchoolWrap .csLeft {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
 }
 .chooseSchoolWrap .csRight {
@@ -1099,10 +1239,15 @@
     margin-bottom: 30px;
     display: block;
     background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .applyCollegeList .items:hover {
+    -webkit-box-shadow: 0 10px 30px rgb(34 138 59 / 30%);
     box-shadow: 0 10px 30px rgb(34 138 59 / 30%);
 }
 .applyCollegeList .items .img {
@@ -1114,17 +1259,22 @@
 .applyCollegeList .items .img img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 .applyCollegeList .items .info {
     padding-top: 20px;
     margin-left: 60px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
 }
 .applyCollegeList .items .info .tit {
     font-size: 36px;
     line-height: 1.2;
     font-weight: normal;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .applyCollegeList .items .info .line {
@@ -1160,7 +1310,11 @@
     margin-bottom: 10px;
     height: 60px;
     background: #f5f5f5;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .evaluationFormBox .formCon .item > .txt {
@@ -1172,11 +1326,17 @@
     line-height: 1;
     padding-left: 20px;
     color: #808080;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .evaluationFormBox .formCon .item > input {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     background: none;
     width: 100%;
@@ -1194,13 +1354,19 @@
     color: #fff;
     background: #228a3b;
     cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .evaluationFormBox .formCon .item > .vc {
     border-left: 1px #ccc solid;
     padding: 0 15px;
     height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
 }
@@ -1225,7 +1391,11 @@
 .schoolDynamicBox .sdlist .item {
     padding: 20px 0;
     border-top: 1px #e6e6e6 solid;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .schoolDynamicBox .sdlist .item:first-child {
@@ -1239,15 +1409,21 @@
 .schoolDynamicBox .sdlist .item .img img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 .schoolDynamicBox .sdlist .item .txt {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     margin-left: 30px;
     font-size: 16px;
     line-height: 1.4;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     -webkit-box-orient: vertical;
+    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     overflow: hidden;
     word-break: break-all;
@@ -1264,7 +1440,11 @@
     width: 100%;
     height: 100%;
     font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 0 20px;
     font-style: normal;
@@ -1284,12 +1464,19 @@
     z-index: 2;
     display: none;
     overflow: hidden;
+    -webkit-box-shadow: 0px 7px 10px 7px rgb(0 0 0 / 5%);
     box-shadow: 0px 7px 10px 7px rgb(0 0 0 / 5%);
 }
 .clientSelectMod .clientSelect li {
     height: 3em;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .clientSelectMod .clientSelect li:hover {
@@ -1299,7 +1486,11 @@
     display: block;
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 16px;
 }
@@ -1314,6 +1505,8 @@
     height: 24px;
     margin-top: -12px;
     z-index: 1;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
     fill: #808080;
 }
@@ -1571,6 +1764,9 @@
 
     .chooseSchoolWrap {
         margin: 50px 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
         flex-flow: column-reverse;
     }
     .chooseSchoolWrap .csRight {
@@ -1656,6 +1852,9 @@
 @media (max-width: 767px) {
     .chooseSchoolWrap {
         margin: 30px 15px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
         flex-flow: column-reverse;
     }
     .chooseSchoolWrap .csRight {
@@ -1666,6 +1865,9 @@
     .applyCollegeList .items {
         padding: 15px;
         margin-bottom: 20px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .applyCollegeList .items .img {
@@ -1745,7 +1947,11 @@
 .schoolGateWrap {
     padding: 40px;
     background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     overflow: hidden;
 }
@@ -1757,13 +1963,23 @@
 .schoolGateWrap .img img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 .schoolGateWrap .info {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 .schoolGateWrap .info .tit {
@@ -1777,6 +1993,8 @@
     background: #228a3b;
 }
 .schoolGateWrap .info .text .txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .schoolGateWrap .info .text .txt .ti {
@@ -1784,6 +2002,8 @@
     line-height: 2;
 }
 .schoolGateWrap .info .text .txt .ps {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
 }
 .schoolGateWrap .info .text .txt .ps p {
@@ -1792,7 +2012,11 @@
     color: #808080;
 }
 .schoolGateWrap .applyFor {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .schoolGateWrap .applyFor .btn {
@@ -1804,8 +2028,14 @@
     border-radius: 40px;
     overflow: hidden;
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 @media (max-width: 1799px) {
@@ -1877,6 +2107,7 @@
 @media (max-width: 993px) {
     .schoolGateWrap {
         padding: 30px;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
     .schoolGateWrap .img {
@@ -1916,6 +2147,7 @@
 @media (max-width: 767px) {
     .schoolGateWrap {
         padding: 20px;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         margin: 15px;
     }
@@ -2005,7 +2237,7 @@
 @media (max-width: 1199px) {
 }
 @media (max-width: 993px) {
-    /* 处理表单 */
+    /* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ */
 
     .schoolTableWrap {
         margin: 0 10px;
@@ -2032,32 +2264,30 @@
 .schoolTableWrap::-webkit-scrollbar {
     width: 5px;
     height: 13px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
 }
 .schoolTableWrap::-webkit-scrollbar-thumb {
     background-color: #1f7c35;
     background-clip: padding-box;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
     min-height: 28px;
 }
 .schoolTableWrap::-webkit-scrollbar-thumb:hover {
     background-color: #1f7c35;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
 }
 
 .collegeDetailsWrap {
     margin-top: 60px;
     padding: 0 0 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .collegeDetailsWrap .cdLeft {
     background: #fff;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
 }
 .collegeDetailsWrap .cdRight {
@@ -2069,6 +2299,8 @@
 }
 .collegeDetailsWrap .cdTabsBox .cdNav {
     border-bottom: 1px #e6e6e6 solid;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-left: 20px;
 }
@@ -2077,8 +2309,14 @@
     height: 84px;
     font-size: 24px;
     margin: 0 23px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     cursor: pointer;
 }
@@ -2095,7 +2333,11 @@
     width: 0;
     background: #228a3b;
     opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
     transform: translateY(0);
 }
 .collegeDetailsWrap .cdTabsBox .cdNav .item.active:after {
@@ -2107,12 +2349,18 @@
     padding: 40px;
 }
 .collegeDetailsWrap .cdTabsBox .cdCon .boxes {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     opacity: 0;
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
     transform: translateY(-10px);
 }
 .collegeDetailsWrap .cdTabsBox .cdCon .boxes.show {
     opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
     transform: translateY(0);
 }
 .collegeDetailsWrap .cdTabsBox .cdCon .boxes p {
@@ -2147,8 +2395,14 @@
     position: relative;
     z-index: 106;
     margin-top: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 .cdSwiper .items .info .tit {
@@ -2164,8 +2418,14 @@
     border-radius: 40px;
     font-size: 18px;
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .cdSwiper .swiper-pagination {
@@ -2173,7 +2433,11 @@
     right: 40px;
     height: 40px;
     left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 .cdSwiper .swiper-pagination .swiper-pagination-bullet-active {
@@ -2188,10 +2452,14 @@
     .collegeDetailsWrap {
         margin-top: 50px;
         padding: 0 0 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .collegeDetailsWrap .cdLeft {
         background: #fff;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
         flex: 1;
     }
     .collegeDetailsWrap .cdRight {
@@ -2203,6 +2471,8 @@
     }
     .collegeDetailsWrap .cdTabsBox .cdNav {
         border-bottom: 1px #e6e6e6 solid;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         padding-left: 20px;
     }
@@ -2211,8 +2481,14 @@
         height: 74px;
         font-size: 22px;
         margin: 0 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         cursor: pointer;
     }
@@ -2229,7 +2505,11 @@
         width: 0;
         background: #228a3b;
         opacity: 0;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
         transition: 0.3s;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
         transform: translateY(0);
     }
     .collegeDetailsWrap .cdTabsBox .cdNav .item.active:after {
@@ -2241,12 +2521,18 @@
         padding: 40px;
     }
     .collegeDetailsWrap .cdTabsBox .cdCon .boxes {
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
         transition: 0.3s;
         opacity: 0;
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
         transform: translateY(-10px);
     }
     .collegeDetailsWrap .cdTabsBox .cdCon .boxes.show {
         opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
         transform: translateY(0);
     }
     .collegeDetailsWrap .cdTabsBox .cdCon .boxes p {
@@ -2280,8 +2566,14 @@
         position: relative;
         z-index: 106;
         margin-top: 12px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
     .cdSwiper .items .info .tit {
@@ -2303,7 +2595,11 @@
         right: 40px;
         height: 40px;
         left: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
     }
     .cdSwiper .swiper-pagination .swiper-pagination-bullet-active {
@@ -2322,10 +2618,14 @@
     .collegeDetailsWrap {
         margin-top: 40px;
         padding: 0 0 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .collegeDetailsWrap .cdLeft {
         background: #fff;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
         flex: 1;
     }
     .collegeDetailsWrap .cdRight {
@@ -2337,6 +2637,8 @@
     }
     .collegeDetailsWrap .cdTabsBox .cdNav {
         border-bottom: 1px #e6e6e6 solid;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         padding-left: 20px;
     }
@@ -2345,8 +2647,14 @@
         height: 64px;
         font-size: 22px;
         margin: 0 12px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         cursor: pointer;
     }
@@ -2363,7 +2671,11 @@
         width: 0;
         background: #228a3b;
         opacity: 0;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
         transition: 0.3s;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
         transform: translateY(0);
     }
     .collegeDetailsWrap .cdTabsBox .cdNav .item.active:after {
@@ -2375,12 +2687,18 @@
         padding: 30px;
     }
     .collegeDetailsWrap .cdTabsBox .cdCon .boxes {
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
         transition: 0.3s;
         opacity: 0;
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
         transform: translateY(-10px);
     }
     .collegeDetailsWrap .cdTabsBox .cdCon .boxes.show {
         opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
         transform: translateY(0);
     }
     .collegeDetailsWrap .cdTabsBox .cdCon .boxes p {
@@ -2414,8 +2732,14 @@
         position: relative;
         z-index: 106;
         margin-top: 12px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
     .cdSwiper .items .info .tit {
@@ -2437,7 +2761,11 @@
         right: 40px;
         height: 40px;
         left: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
     }
     .cdSwiper .swiper-pagination .swiper-pagination-bullet-active {
@@ -2451,12 +2779,19 @@
 @media (max-width: 993px) {
     .collegeDetailsWrap {
         padding: 0 0 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         margin: 20px 15px;
     }
     .collegeDetailsWrap .cdLeft {
         background: #fff;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
         flex: 1;
     }
     .collegeDetailsWrap .cdRight {
@@ -2469,7 +2804,10 @@
     }
     .collegeDetailsWrap .cdTabsBox .cdNav {
         border-bottom: 1px #e6e6e6 solid;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
         padding-left: 0;
     }
@@ -2478,8 +2816,14 @@
         height: 50px;
         font-size: 18px;
         margin: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         cursor: pointer;
     }
@@ -2496,7 +2840,11 @@
         width: 0;
         background: #228a3b;
         opacity: 0;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
         transition: 0.3s;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
         transform: translateY(0);
     }
     .collegeDetailsWrap .cdTabsBox .cdNav .item.active:after {
@@ -2508,12 +2856,18 @@
         padding: 20px;
     }
     .collegeDetailsWrap .cdTabsBox .cdCon .boxes {
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
         transition: 0.3s;
         opacity: 0;
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
         transform: translateY(-10px);
     }
     .collegeDetailsWrap .cdTabsBox .cdCon .boxes.show {
         opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
         transform: translateY(0);
     }
     .collegeDetailsWrap .cdTabsBox .cdCon .boxes p {
@@ -2547,8 +2901,14 @@
         position: relative;
         z-index: 106;
         margin-top: 12px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
     .cdSwiper .items .info .tit {
@@ -2570,7 +2930,11 @@
         right: 15px;
         height: 31px;
         left: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
     }
     .cdSwiper .swiper-pagination .swiper-pagination-bullet-active {
@@ -2602,7 +2966,11 @@
     margin-bottom: 10px;
     height: 38px;
     border-radius: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: relative;
 }
@@ -2621,6 +2989,8 @@
     padding-right: 1em;
 }
 .saFormBox .item > input {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     padding: 0 10px;
     font-size: 14px;
@@ -2629,6 +2999,8 @@
     height: 100%;
 }
 .saFormBox .item > .icon-svg {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     width: 17px;
     height: 17px;
@@ -2641,14 +3013,20 @@
 .saFormBox .item .calendar {
     padding-right: 36px;
     display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     cursor: pointer;
     width: 100%;
 }
 .saFormBox .btnMod {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .saFormBox .btnMod .btn {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     margin-left: 1em;
     border-radius: 6px;
@@ -2660,12 +3038,16 @@
     cursor: pointer;
 }
 .saFormBox .clientSelectMod {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     border: 1px #e6e6e6 solid;
     height: 38px;
     padding: 0 10px;
 }
 .saFormBox .icon-svg {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
     width: 12px;
     fill: #228a3b;
@@ -2765,11 +3147,16 @@
 
 .enrollmentGuideWrap {
     margin: 0 -12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 .enrollmentGuideWrap .items {
     margin: 0 12px 40px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .enrollmentGuideWrap .items .img {
@@ -2783,10 +3170,15 @@
 .enrollmentGuideWrap .items .img img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .enrollmentGuideWrap .items:hover .img img {
+    -webkit-transform: scale(1.12);
+    -ms-transform: scale(1.12);
     transform: scale(1.12);
 }
 .enrollmentGuideWrap .info {
@@ -2815,7 +3207,10 @@
 }
 
 .enrollmentGuideWrap .items:hover {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
     transform: translateY(-10px);
+    -webkit-box-shadow: 0 10px 30px rgb(34 138 59 / 30%);
     box-shadow: 0 10px 30px rgb(34 138 59 / 30%);
 }
 
@@ -2954,9 +3349,13 @@
 
 .enrGuideDetailsWrap {
     margin: 20px 0 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .enrGuideDetailsWrap .egdLeft {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
 }
 .enrGuideDetailsWrap .egdRight {
@@ -3015,15 +3414,26 @@
     margin: -40px auto 0;
     overflow: hidden;
     z-index: 1;
+    -webkit-box-shadow: 0 10px 30px rgb(34 138 59 / 30%);
     box-shadow: 0 10px 30px rgb(34 138 59 / 30%);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .egdRight .product-nav {
     position: relative;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
     transform: translateY(0);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .egdRight .product-nav.fex {
@@ -3031,7 +3441,11 @@
     top: 0;
     right: 0;
     z-index: 10;
+    -webkit-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
     transition: all 1s ease 0s;
+    -webkit-transform: translateY(100px);
+    -ms-transform: translateY(100px);
     transform: translateY(100px);
 }
 @media (max-width: 1799px) {
@@ -3118,6 +3532,9 @@
 @media (max-width: 993px) {
     .enrGuideDetailsWrap {
         margin: 20px 0 60px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .enrGuideDetailsWrap .egdRight {
@@ -3161,6 +3578,9 @@
 @media (max-width: 767px) {
     .enrGuideDetailsWrap {
         margin: 15px 15px 30px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .enrGuideDetailsWrap .egdRight {
@@ -3201,7 +3621,10 @@
 
 .subjectClassificationWrap {
     margin: 0 -12px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 .subjectClassificationWrap .item {
@@ -3212,8 +3635,14 @@
     height: 58px;
     border: 1px #e6e6e6 solid;
     border-radius: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .subjectClassificationWrap .item.on {
@@ -3278,6 +3707,8 @@
     padding: 30px 40px;
     border: 1px #e6e6e6 solid;
     overflow: hidden;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .subjectListWrap .item .tit {
@@ -3300,6 +3731,7 @@
     background: #228a3b;
     border-color: #228a3b;
     color: #fff;
+    -webkit-box-shadow: 0 10px 30px rgb(34 138 59 / 50%);
     box-shadow: 0 10px 30px rgb(34 138 59 / 50%);
 }
 .subjectListWrap .item:hover .txt,
@@ -3322,6 +3754,8 @@
         padding: 20px 30px;
         border: 1px #e6e6e6 solid;
         overflow: hidden;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
         transition: 0.3s;
     }
     .subjectListWrap .item .tit {
@@ -3350,6 +3784,8 @@
         padding: 15px 25px;
         border: 1px #e6e6e6 solid;
         overflow: hidden;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
         transition: 0.3s;
     }
     .subjectListWrap .item .tit {
@@ -3374,19 +3810,35 @@
     padding: 29px 0;
     margin-bottom: 30px;
     border: 1px #e6e6e6 solid;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .dynamicListWrap .item:hover {
     border-color: #228a3b;
+    -webkit-box-shadow: 0 10px 30px rgb(34 138 59 / 30%);
     box-shadow: 0 10px 30px rgb(34 138 59 / 30%);
 }
 .dynamicListWrap .item .date {
     width: 137px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 .dynamicListWrap .item .date .day {
@@ -3403,6 +3855,8 @@
 }
 .dynamicListWrap .item .info {
     border-left: 1px #e6e6e6 solid;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     padding: 0 38px;
 }
@@ -3434,6 +3888,9 @@
         display: block;
         padding: 18px 0;
         margin-bottom: 30px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .dynamicListWrap .item .date {
@@ -3455,6 +3912,8 @@
     .dynamicListWrap .item .info {
         padding: 20px 0 0;
         border-top: 1px #e6e6e6 solid;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
         flex: 1;
         margin: 0 20px;
         border-left: 0;
@@ -3473,24 +3932,25 @@
 
 .searchResultsWrap {
     position: relative;
-}
-.searchResultsImg {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-}
-.searchResultsImg img {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
+    background: #238a3b url(../images/search_results_banner.jpg) no-repeat top center;
+    background-size: 1920px;
+    overflow: hidden;
+    height: 640px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .searchResultsBox {
     position: relative;
     z-index: 1;
-    padding: 150px 0px;
-    width: 85%;
-    margin: 0px auto;
+    margin: 0px auto 180px;
+    max-width: 80%;
 }
 .searchResultsBox .tit {
     display: block;
@@ -3504,20 +3964,30 @@
     margin-bottom: 40px;
     height: 72px;
     background: rgb(255, 255, 255);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .searchResultsBox .mergemod input {
     font-size: 18px;
     width: 100%;
-    color: rgb(7, 61, 150);
+    color: rgb(35 138 59);
 }
 .searchResultsBox .mergemod button {
     background: none;
     border: 0px;
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .searchResultsBox .mergemod .icon-svg {
@@ -3525,12 +3995,19 @@
     height: 24px;
 }
 .searchResultsBox .radiomod {
-    margin-left: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .searchResultsBox .radiomod .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .searchResultsBox .radiomod input {
@@ -3546,8 +4023,12 @@
     cursor: pointer;
 }
 @media (max-width: 1799px) {
+    .searchResultsWrap {
+        background-size: 1920px;
+        height: 640px;
+    }
     .searchResultsBox {
-        padding: 120px 0px;
+        max-width: 80%;
     }
     .searchResultsBox .tit {
         margin-bottom: 40px;
@@ -3566,7 +4047,6 @@
         height: 24px;
     }
     .searchResultsBox .radiomod {
-        margin-left: 60px;
     }
     .searchResultsBox .radiomod .item {
     }
@@ -3581,8 +4061,13 @@
     }
 }
 @media (max-width: 1379px) {
+    .searchResultsWrap {
+        background-size: 1920px;
+        height: 640px;
+    }
     .searchResultsBox {
-        padding: 108px 0px;
+        margin: 0 0 250px;
+        max-width: 80%;
     }
     .searchResultsBox .tit {
         margin-bottom: 35px;
@@ -3601,7 +4086,6 @@
         height: 24px;
     }
     .searchResultsBox .radiomod {
-        margin-left: 60px;
     }
     .searchResultsBox .radiomod .item {
     }
@@ -3616,8 +4100,13 @@
     }
 }
 @media (max-width: 1299px) {
+    .searchResultsWrap {
+        background-size: cover;
+        height: 55vh;
+    }
     .searchResultsBox {
-        padding: 108px 0px;
+        margin: 0 0 50px;
+        max-width: 80%;
     }
     .searchResultsBox .tit {
         margin-bottom: 30px;
@@ -3636,7 +4125,6 @@
         height: 24px;
     }
     .searchResultsBox .radiomod {
-        margin-left: 60px;
     }
     .searchResultsBox .radiomod .item {
     }
@@ -3651,8 +4139,14 @@
     }
 }
 @media (max-width: 1199px) {
+    .searchResultsWrap {
+        background-size: cover;
+        height: 46vh;
+    }
     .searchResultsBox {
-        padding: 88px 0px;
+        /* padding: 88px 0px; */
+        margin: 0;
+        max-width: 80%;
     }
     .searchResultsBox .tit {
         margin-bottom: 30px;
@@ -3671,7 +4165,6 @@
         height: 24px;
     }
     .searchResultsBox .radiomod {
-        margin-left: 30px;
     }
     .searchResultsBox .radiomod .item {
     }
@@ -3687,7 +4180,9 @@
 }
 @media (max-width: 993px) {
     .searchResultsWrap {
-        position: relative;
+    }
+    .searchResultsWrap {
+        background-size: cover;
         height: 40vh;
     }
     .searchResultsImg {
@@ -3699,10 +4194,13 @@
     }
     .searchResultsImg img {
         height: 100%;
+        -o-object-fit: cover;
         object-fit: cover;
     }
     .searchResultsBox {
-        padding: 8vh 0px;
+        /* padding: 8vh 0px; */
+        margin: 0px auto 0;
+        max-width: 80%;
     }
     .searchResultsBox .tit {
         margin-bottom: 30px;
@@ -3721,38 +4219,29 @@
         height: 24px;
     }
     .searchResultsBox .radiomod {
-        margin-left: 30px;
+        margin-left: 0;
     }
     .searchResultsBox .radiomod .item {
     }
     .searchResultsBox .radiomod input {
-        width: 16px;
-        height: 16px;
-        margin-right: 8px;
+        width: 14px;
+        height: 14px;
+        margin-right: 4px;
     }
     .searchResultsBox .radiomod label {
         font-size: 14px;
-        margin-right: 25px;
+        margin-right: 16px;
     }
 }
 @media (max-width: 767px) {
     .searchResultsWrap {
-        position: relative;
-        height: 34vh;
-    }
-    .searchResultsImg {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        height: 100%;
-    }
-    .searchResultsImg img {
-        height: 100%;
-        object-fit: cover;
+        background-size: cover;
+        height: 37vh;
     }
     .searchResultsBox {
-        padding: 8vh 0px;
+        /* padding: 8vh 0px; */
+        margin: 0px auto 0;
+        max-width: 80%;
     }
     .searchResultsBox .tit {
         margin-bottom: 14px;
@@ -3774,6 +4263,7 @@
     }
     .searchResultsBox .radiomod {
         margin-left: 0px;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
     .searchResultsBox .radiomod .item {
@@ -3826,7 +4316,11 @@
 }
 .resultsList .items .link {
     margin-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .resultsList .items .link span {
@@ -3838,12 +4332,14 @@
     top: 1px;
     width: 20px;
     height: 20px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
     fill: rgb(35 138 59);
 }
 @media (max-width: 1799px) {
     .searchResultsCon {
-        padding: 90px 0px;
+        padding: 70px 0px;
         width: 85%;
         margin: 0px auto;
     }
