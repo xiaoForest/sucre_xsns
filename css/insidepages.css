@@ -1854,8 +1854,8 @@
         margin: 30px 15px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;
-        -ms-flex-flow: column-reverse;
-        flex-flow: column-reverse;
+        -ms-flex-flow: column;
+        flex-flow: column;
     }
     .chooseSchoolWrap .csRight {
         width: 100%;
@@ -3869,6 +3869,10 @@
     font-size: 16px;
     line-height: 2;
     color: #808080;
+    text-align: justify;
+}
+.dynamicListWrap .timeMod {
+    display: none;
 }
 @media (max-width: 1799px) {
 }
@@ -3881,6 +3885,10 @@
 @media (max-width: 993px) {
 }
 @media (max-width: 767px) {
+    .dynamicListWrap .timeMod {
+        display: flex;
+        margin: 5px 0 10px;
+    }
     .dynamicListWrap {
         margin: 20px;
     }
@@ -3896,6 +3904,7 @@
     .dynamicListWrap .item .date {
         width: 100%;
         padding-bottom: 15px;
+        display: none;
     }
     .dynamicListWrap .item .date .day {
         line-height: 1;
@@ -3910,12 +3919,12 @@
         font-family: "EuclidCircularA-Regular";
     }
     .dynamicListWrap .item .info {
-        padding: 20px 0 0;
-        border-top: 1px #e6e6e6 solid;
+        padding: 0;
+        border-top: 0;
         -webkit-box-flex: 1;
         -ms-flex: 1;
         flex: 1;
-        margin: 0 20px;
+        margin: 0 15px;
         border-left: 0;
     }
     .dynamicListWrap .item .info .tit {

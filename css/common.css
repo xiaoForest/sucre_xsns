@@ -8313,6 +8313,6 @@ button.swiper-pagination-bullet {
 }
 @media (max-width: 767px) {
   .floatingNavGlobal {
-    /* display: none; */
+    display: none;
   }
 }
