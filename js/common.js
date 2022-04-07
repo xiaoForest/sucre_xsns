@@ -92,7 +92,7 @@ jQuery(document).ready(function ($) {
         }
     }
 
- 
+
     if ($('.hotNewsSwiper').length) {
         var hotNewsSwiper = new Swiper('.hotNewsSwiper', {
             effect: 'fade', // cards
@@ -169,7 +169,11 @@ jQuery(document).ready(function ($) {
         $(window).resize(function () {
             num = $('#hotNews').offset().left
         });
+        if ($('.scroll-top').height() - 250 < $(window).height()) {
+            return false
+        }
         $(window).scroll(function () {
+
             num = $('#hotNews').offset().left
             var win = $(window).scrollTop();
             $('.flex-b').each(function () {
@@ -187,6 +191,7 @@ jQuery(document).ready(function ($) {
                 }
 
             })
+
             if ($(window).width() > 993) {
                 if ($('.scroll-top').length > 0) {
                     var top = $('.scroll-top').offset().top;
