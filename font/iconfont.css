@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3356379 */
+  src: url('iconfont.woff2?t=1650866372496') format('woff2'),
+       url('iconfont.woff?t=1650866372496') format('woff'),
+       url('iconfont.ttf?t=1650866372496') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sanjiao1:before {
+  content: "\e600";
+}
+
+.icon-31dianhua:before {
+  content: "\e601";
+}
+
+.icon-xialajiantou:before {
+  content: "\e638";
+}
+
+.icon-zuo:before {
+  content: "\e63c";
+}
+
+.icon-youxiang:before {
+  content: "\e908";
+}
+
+.icon-jiahao:before {
+  content: "\e61c";
+}
+
+.icon-sousuo:before {
+  content: "\e60f";
+}
+
+.icon-shangshuangjiantou:before {
+  content: "\e617";
+}
+
+.icon-youtube:before {
+  content: "\e87c";
+}
+
+.icon-pinterest:before {
+  content: "\e640";
+}
+
+.icon-twitter:before {
+  content: "\e882";
+}
+
+.icon-facebook:before {
+  content: "\e8e7";
+}
+
+.icon-instagram:before {
+  content: "\e8f9";
+}
+
+.icon-linkedin:before {
+  content: "\e978";
+}
+
